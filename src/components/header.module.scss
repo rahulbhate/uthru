@@ -1,0 +1,107 @@
+@import '../styles/global';
+
+.banner {
+  background-image: url('../images/kitchen-female.png');
+  height: 80vh;
+  position: relative;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner > * {
+  position: relative;
+  z-index: 10;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color:#e5a191;
+}
+.logo{
+    width: 30%;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.row {
+    height: 100px;
+}
+.header {
+  background-color: #393452;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+}
+.headerSectionContents{
+       padding: 0px 100px 50px 100px;
+       text-align: center;
+}
+.spantitlemain {
+      font-size: 40pt;
+      text-align: center;
+      align-items: center;
+}
+.spanFuture{
+        color: white;
+        font-weight: 'bolder';
+        text-align: center;
+        align-items: center;
+}
+.subtitle{
+          color: #393451;
+          font-size: 28pt;
+          font-weight: 'bold';
+          text-align: center;
+          width: 25%;
+          margin: auto;
+          margin-bottom: 25px;
+          
+        }
+       
+        .spansection{
+          text-decoration: underline;
+          font-size: 40pt;
+          font-weight: bolder;
+          color: #fba394;
+          text-align: center;
+        }
+        h2{
+          line-height: 1.5em;
+          font-size: 22pt;
+          width: 100%;
+        }
+        .contents {
+          width: 40%;
+          margin: auto;
+          margin-bottom: 30px;
+          line-height: 1.5em;
+          font-size: 18pt;
+          font-weight: 200;
+          font-family: 'muli';
+        }
+        .btnprimary{
+          width: 234px;
+          height: 68px;
+          background-color: #393451;
+          color: #ffffff;
+          font-size: 14pt;
+          font-weight: bold;
+          cursor: pointer;
+          margin: 10px;
+          border: 1px solid #ffffff;
+          outline: none;
+          opacity: 0.6;
+          transition: all .5s ease-in-out;
+          &:hover{
+            background-color: #ffffff;
+            color: #393451;
+            opacity: 0.8;
+          }
+        }
