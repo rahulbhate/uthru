@@ -17,9 +17,12 @@ const About = ( {location} ) => {
   return (
     <Layout>
        <Header dataIndex={dataAbout.about} navbar={true}/>
-       <div className={styles.sectionFive}><h2>{dataAbout.about.midcontent[0].titleText1}</h2>
+       <div className={styles.sectionFive}>
+       <hr className={styles.special}/>
+        <h2>{dataAbout.about.midcontent[0].titleText1}</h2>
        <p>{dataAbout.about.midcontent[0].titleSubtext1}</p></div>
        <section className={styles.howWorks}>
+       <hr className={styles.rounded}/>
        {ReactHtmlParser(dataAbout.about.midcontent[0].bulletedList)}
          </section>
        <section className={styles.sectionColumns}>
@@ -52,7 +55,9 @@ const About = ( {location} ) => {
       </div>
       <div id="chatForm"></div>
     </section>
-       <div className={styles.sectionFive}><h2>{dataAbout.about.midcontent[0].titleText6}</h2>
+       <div className={styles.sectionFive}>
+       <hr className={styles.special} />
+         <h2>{dataAbout.about.midcontent[0].titleText6}</h2>
        <p>{dataAbout.about.midcontent[0].titleSubtext6}</p></div>
        <div className={styles.detailsArea}>
       <RegisterForm />

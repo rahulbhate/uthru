@@ -1,0 +1,100 @@
+/* Media Queries */
+
+/* iPad Pro */
+@media only screen and (max-width:1024px)
+{
+
+}
+/* iPad Pro */
+
+
+/* iPad */
+@media only screen and (max-width:768px)
+{
+
+}
+/* iPad */
+
+
+/* iPhone6/7/8 Plus */
+@media only screen and (max-width:414px)
+{
+    .contents {font-size: 14px !important;}
+    .bounce{left: -133px !important;}
+}
+/* iPhone6/7/8 Plus */
+
+
+/* iPhone6/7/8  */
+@media only screen and (max-width:375px)
+{
+    .contents {font-size: 19px !important;}
+    .btnprimary{margin-left: 50px !important;}
+    .bounce{top: 120px !important;left: -125px !important;}
+    .sectionFive h2 {font-size: 21pt !important;}
+    .sectionFive p {font-size: 15pt !important;}
+
+}
+/* iPhone6/7/8  */
+
+
+/* iPhone5/SE  */
+@media only screen and (max-width:320px)
+{
+    .logo {width: 27% !important;}
+    .header a {padding: 8px !important;font-size: 12px !important;} 
+    .subtitle {font-size: 21pt !important} 
+    .contents {font-size: 15px !important;}   
+    .btnprimary {font-size: 12pt !important;}
+    .subtitlealt {font-size: 21pt !important} 
+    .bounce {top: 105px !important;left: -110px !important;}
+    .headerSectionContentsAlternate .btnprimary {margin-left: 60px !important;}   
+    .sectionFive h2 {font-size: 18pt !important;} 
+    .sectionFive p {font-size: 13pt !important;}  
+    .sectionColumns div p {font-size: 14px !important;}   
+}
+/* iPhone5/SE  */
+
+
+
+/* Global css*/
+@media only screen and (min-width:768px) and (max-width:1024px)
+{
+    .headerSectionContentsAlternate {width:100% !important;padding: 120px 0px !important;}
+    .headerSectionContentsAlternate .contents{width: 80% !important;color:#FFFFFF !important;}
+    .headerSectionContentsAlternate .subtitlealt{width: 80% !important;text-align: center !important;}
+    .content {padding-left:0px !important;padding-right:0px !important;}
+}
+/* Global css*/
+
+
+
+/* Global css*/
+@media only screen and (min-width:320px) and (max-width:480px)
+{
+    .content {padding-left:0px !important;padding-right:0px !important;}
+    .row {height: 70px !important;}
+    .headerSectionContents{padding: 60px 0px 0px 0px !important;}
+    .header {width: 65% !important;padding: 15px !important;text-align: left !important}
+    .subtitle {width: 100% !important;}
+    .contents {width:100% !important;margin-bottom: 15px !important;margin-left:0px !important;text-align: center !important;color: #FFFFFF !important;padding: 0px 10px !important;}
+    .btnprimary {width: 50% !important;height: 50px !important;}
+    .subtitlealt {width: 100% !important;text-align: center !important;}
+    .headerSectionContentsAlternate {width:100% !important;padding: 60px 0px !important;}
+    .sectionFive {margin: 5px 0px 0px 0px !important;}
+    .sectionFive h2 {width: 100% !important;padding: 20px 20px 0px 20px !important;text-align: center !important;line-height: 1.3em !important;}
+    .sectionFive p {width: 100% !important;padding: 20px !important;color: #FFFFFF !important;}
+    .howWorks {padding: 30px 0px !important;margin: 0px 20px 0px 20px !important;}  
+    .howWorks ul {width: 100% !important;} 
+    .howWorks ul .bulletHeadings {color: #e6a192 !important;font-weight: bold !important;margin-bottom:10px !important;} 
+    .howWorks ul .bulletContents {color: #999999 !important;font-weight: bold !important;margin-bottom:30px !important;}
+    .sectionColumns {padding: 30px 0px !important;margin: 0px 20px 0px 20px !important;} 
+    .sectionColumns div {width: 100% !important;} 
+    .sectionColumns div p {color: #FFFFFF !important;font-weight: normal !important;padding: 0px 10px !important;}
+    .detailsArea {width: 100% !important;} 
+    .footercontainer {width: 100% !important;padding:20px !important;}
+    .footercontainer .footercolumns {width: 100% !important;}
+}
+/* Global css*/
+
+/* Media Queries */

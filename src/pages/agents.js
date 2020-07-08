@@ -16,9 +16,12 @@ const Chat = ( {location} ) => {
   return(
     <Layout>
       <Header dataIndex={dataChat.chat} navbar={true}/>
-      <div className={styles.sectionFive}><h2>{dataChat.chat.midcontent[0].titleText1}</h2>
+      <div className={styles.sectionFive}>
+      <hr className={styles.special} />
+      <h2>{dataChat.chat.midcontent[0].titleText1}</h2>
        <p>{dataChat.chat.midcontent[0].titleSubtext1}</p></div>
        <section className={styles.howWorks}>
+       <hr className={styles.rounded}/>
        {ReactHtmlParser(dataChat.chat.midcontent[0].bulletedList)}
          </section>
        <section className={styles.sectionColumns}>
@@ -51,7 +54,9 @@ const Chat = ( {location} ) => {
       </div>
       <div id="chatForm"></div>
     </section>
-       <div className={styles.sectionFive}><h2>{dataChat.chat.midcontent[0].titleText6}</h2>
+       <div className={styles.sectionFive}>
+       <hr className={styles.special} />
+         <h2>{dataChat.chat.midcontent[0].titleText6}</h2>
        <p>{dataChat.chat.midcontent[0].titleSubtext6}</p></div>
        <div className={styles.detailsArea}>
           <RegisterForm />

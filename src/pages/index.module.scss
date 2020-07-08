@@ -1,9 +1,6 @@
 @import '../styles/global';
 
-section{
-    // display: flex;
-    
-}
+
 .detailsArea {
     line-height: 1.9rem;
     width: 45%;
@@ -25,7 +22,7 @@ section{
     input{
         color: #8b1fa6; 
         font-size: "13px";
-        background-color: #e8a597;
+        background-color: $color-pallet-background;
         border: 0px;
         border-bottom: 1px solid #8d6871;
         width: 55%;
@@ -55,11 +52,11 @@ section{
     input[type='submit']:hover{
         cursor: pointer;
         color: white;
-        background-color: #393451;
+        background-color: $color-pallet-footer;
     }
     input[type='submit']{
         background-color: white;
-        color: black;
+        color: $color-pallet-footer;
         padding: 10px 10px;
         font-size: 15pt;
         margin-top: 25px;
@@ -71,7 +68,7 @@ section{
     margin: 100px 0px 112px 165px;
     h2{
         width: 40%;
-        color: #393451;
+        color: $color-pallet-footer;
         font-weight: bold;
         font-size: 28pt;
         line-height: 1.7em;
@@ -87,7 +84,7 @@ section{
     }
     /* Rounded border */
     hr.special {
-        border-top: 8px solid #373251;
+        border-top: 8px solid $color-pallet-footer;
         border-radius: 5px;
         width: 100px;
         //margin: auto;
@@ -95,10 +92,10 @@ section{
    
 }
 .sectionFive{
-    margin: 100px 0px 60px 165px;
+    margin: 40px 0px 60px 165px;
     h2{
         width: 40%;
-        color: #393451;
+        color: $color-pallet-footer;
         font-weight: bold;
         font-size: 28pt;
         line-height: 1.7em;
@@ -114,7 +111,7 @@ section{
     }
      /* Rounded border */
      hr.special {
-        border-top: 8px solid #373251;
+        border-top: 8px solid $color-pallet-footer;
         border-radius: 5px;
         width: 100px;
         //margin: auto;
@@ -127,20 +124,20 @@ section{
     margin: 0px 50px 0px 50px;
     /* Rounded border */
     hr.rounded {
-        border-top: 8px solid #e5a191;
+        border-top: 8px solid $color-pallet-background;
         border-radius: 5px;
         width: 100px;
         margin: auto;
     }
     h2{
-        color: #e49c8c;
+        color: $color-pallet-background;
         line-height: 1.7em;
         font-size: 28pt;
         width: 40%;
         margin: auto;
     }
     p{
-        color: #373251;
+        color: $color-pallet-footer;
         line-height: 1.7em;
         font-size: 18pt;
         width: 80%;
@@ -156,7 +153,7 @@ section{
     }
 }
 .bulletHeadings{
-    color: #e5a191;
+    color: $color-pallet-background;
     margin-bottom: 15px;
     font-size: 26pt;
     font-weight: bold;
@@ -171,13 +168,13 @@ section{
 .sectionColumns{
     padding: 50px 0px 50px 0px;
     margin: 0px 50px 50px 50px;
-    background-color: #393452;
+    background-color: $color-pallet-footer;
     div{
         width: calc(99% / 3);
         padding-bottom: 50px;
         display: inline-table;
         h2{
-            color: #fba394;
+            color: $color-pallet-background;
             font-size: 24pt;
             line-height: 2.5em;
         }

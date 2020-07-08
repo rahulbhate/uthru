@@ -1,0 +1,19 @@
+@mixin button-primary {
+    width: 234px;
+          height: 68px;
+          background-color: #393451;
+          color: #ffffff;
+          font-size: 14pt;
+          font-weight: bold;
+          cursor: pointer;
+          margin: 10px;
+          border: 1px solid #ffffff;
+          outline: none;
+          opacity: 0.6;
+          transition: all .5s ease-in-out;
+          &:hover{
+            background-color: #ffffff;
+            color: #393451;
+            opacity: 0.8;
+          }
+}
