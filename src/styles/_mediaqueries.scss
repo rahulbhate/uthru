@@ -1,4 +1,16 @@
-@media all and (max-width: 1024px){
+@media screen and (max-width: 768px){
+.container {
+    .headerSectionContentsAlternate {
+        .subtitlealt{
+            font-size: 16pt;
+        }
+        .contents {
+            font-size: 14pt;
+        }
+    }
+}
+}
+@media screen and (min-width: 768px ) and (max-width: 1024px){
     .banner{ 
         height: 80vh !important;
         .container {
@@ -7,13 +19,11 @@
               height: 100px;
             }
             .headerSectionContentsAlternate {
+                width: 100%;
                 .subtitlealt{
-                    width: 100%;
-                    font-size: 12pt;
                     text-align: center;
                 }
-                .contents {
-                    width: 100%;
+                .contents { 
                     font-size: 9pt;
                     margin: 0px !important;
                 }
@@ -58,7 +68,7 @@
         width: 100% !important;
     }
     .sectionFive {
-        margin: 0px !important;
+        margin: 20px !important;
        
         hr.special {
             width: 100px;
@@ -66,12 +76,12 @@
         }
         h2, p{
             width: 100% !important;
-            font-size: 10pt;
+            font-size: 9pt;
             text-align: center !important;
         }
     }
     .howWorks {
-        padding: 0px !important;
+        padding: 5px !important;
     }
     .sectionColumns {
         div {
@@ -89,9 +99,105 @@
       .footernavigation {
         line-height: 2.5em;
         float: none;
-        li{
+        ul li{
           float: none;
         }
       }
     }
 }
+@media only screen and (min-width:320px) and (max-width: 414px) {
+    .banner {
+        height: 100vh !important;
+        .header {
+            width: 100%;
+            text-align: center;
+            a{
+                padding: 10px;
+            }
+           padding: 10px;
+        }
+        .headerSectionContentsAlternate {
+            width: 100%;
+            .subtitlealt{
+                width: 100%;
+                text-align: center;
+            }
+            .contents {
+                width: 100%;
+                font-size: 9pt;
+                margin: 0px !important;
+            }
+            .btnprimary a{
+                align-items: center;
+            }
+        }
+        .headerSectionContents{
+            padding: 35px 25px 25px 25px;
+            .subtitle{
+            width: 100%;
+            font-size: 18pt;
+        }
+        .contents {
+            width: 100%;
+            font-size: 15pt;
+            margin-bottom: 5px;
+        }
+        .btnprimary{
+            text-align: center;
+        }
+        }
+    }
+    .sectionFive {
+        margin: 0px !important;
+       
+        hr.special {
+            width: 100px;
+            margin: auto;
+        }
+        h2, p{
+            width: 100% !important;
+            font-size: 10pt;
+            text-align: center !important;
+        }
+    }
+    .detailsArea {
+        width: 100% !important;
+    }
+        .howWorks {
+            padding: 0px !important;
+        }
+        .sectionColumns {
+            div {
+                width: 100% !important;
+            }
+        }
+    
+    .footercolumns {
+        float: none !important;
+        min-height: 250px;
+        width: 100% !important;
+        text-align: center;
+
+      .footerlogo{
+        text-align: center;
+        width: 100%;
+      }
+      .footernavigation {
+        line-height: 1.5em;
+        ul li {
+            float: none;
+        }
+      }
+    }
+
+}
+@media screen and (min-width: 320px ) and (max-width: 480px) {
+
+
+}
+
+@media only screen and (orientation: landscape) {
+    body {
+      background-color: lightblue;
+    }
+  }

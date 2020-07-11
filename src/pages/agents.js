@@ -58,7 +58,7 @@ const Chat = ( {location} ) => {
        <hr className={styles.special} />
          <h2>{dataChat.chat.midcontent[0].titleText6}</h2>
        <p>{dataChat.chat.midcontent[0].titleSubtext6}</p></div>
-       <div className={styles.detailsArea}>
+        <div className={styles.detailsArea}>
           <RegisterForm />
       </div>
     </Layout>

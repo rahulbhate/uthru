@@ -77,7 +77,7 @@ export default function Header ({location,dataIndex, navbar})  {
             {navbar ? 
               <>
               <Link className={styles.links}  to={url+ '#chatForm'}><button className={styles.btnprimary}>{ReactHtmlParser(dataIndex.header[0].buttonsLinks)}</button></Link>
-              <FaArrowDown size={48} className={styles.bounce} />
+              {/* <FaArrowDown size={48} className={styles.bounce} /> */}
               </>
             :
             <>
