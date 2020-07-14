@@ -33,8 +33,10 @@ export default function Header ({dataIndex, navbar})  {
   var url
   if(typeof window === undefined){
       url = global.window.location.pathname
+  }else{
+    url = window.location.pathname
   }
-   url = window.location.pathname
+  
   
   const [isflag, setflag] = useState();
   const listenScrollEvent = event => {
