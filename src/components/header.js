@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react"
 import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
 import { Link, useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import window from 'global/window'
+import win, { window } from 'global/window'
 import { FaArrowDown } from "react-icons/fa"
 import styles from "./header.module.scss"
 import logo from "../images/uthrulogo_pinkBG.png"
@@ -30,7 +30,12 @@ const NavMenu = (props) => {
   )
 }
 export default function Header ({dataIndex, navbar})  {
-  const url = window.path
+  var url
+  if(typeof window === undefined){
+      url = global.window.location.pathname
+  }
+   url = window.location.pathname
+  
   const [isflag, setflag] = useState();
   const listenScrollEvent = event => {
     if (window.scrollY < 100) {
