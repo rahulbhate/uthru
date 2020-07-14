@@ -30,12 +30,7 @@ const NavMenu = (props) => {
   )
 }
 export default function Header ({dataIndex, navbar})  {
-  var url
-  if(typeof window === undefined){
-    console.log("Windowwwwwåßßßßß");
-      url = global.window.location.pathname
-  }
-  
+
   const [isflag, setflag] = useState();
   const listenScrollEvent = event => {
     if (window.scrollY < 100) {
@@ -81,7 +76,7 @@ export default function Header ({dataIndex, navbar})  {
             </p>
             {navbar ? 
               <>
-              <Link className={styles.links}  to={url+ '#chatForm'}><button className={styles.btnprimary}>{ReactHtmlParser(dataIndex.header[0].buttonsLinks)}</button></Link>
+              <a className={styles.links}  href='#chatForm'><button className={styles.btnprimary}>{ReactHtmlParser(dataIndex.header[0].buttonsLinks)}</button></a>
               {/* <FaArrowDown size={48} className={styles.bounce} /> */}
               </>
             :
