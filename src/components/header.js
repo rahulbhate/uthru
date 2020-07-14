@@ -31,7 +31,7 @@ const NavMenu = (props) => {
 }
 export default function Header ({dataIndex, navbar})  {
   var url
-  if(typeof window !== undefined){
+  if(typeof window === undefined){
     console.log("Windowwwwwåßßßßß");
       url = global.window.location.pathname
   }
