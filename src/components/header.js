@@ -112,6 +112,8 @@ export default function Header({ dataIndex, navbar }) {
                     {ReactHtmlParser(dataIndex.header[0].buttonsLinks)}
                   </button>
                 </a>
+              </div>
+              <div style={{ width: "40%", marginTop: "20px" }}>
                 <FaArrowDown size={48} className={styles.bounce} />
               </div>
             </>
