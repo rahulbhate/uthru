@@ -1,11 +1,15 @@
-import React, {useState, useEffect} from "react"
-import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
+import React, { useState, useEffect } from "react"
+import ReactHtmlParser, {
+  processNodes,
+  convertNodeToElement,
+  htmlparser2,
+} from "react-html-parser"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import win, { window } from 'global/window'
+import win, { window } from "global/window"
 import { FaArrowDown } from "react-icons/fa"
 import styles from "./header.module.scss"
-import logo from "../images/uthrulogo_pinkBG.png"
+import logo from "../images/uthrulogo_purpleBG.png"
 
 const HeaderLink = props => {
   const activeStyle = {
@@ -20,32 +24,31 @@ const HeaderLink = props => {
   )
 }
 
-const NavMenu = (props) => {
-  return(
-  <>
-    <HeaderLink to="/" text="Home" />
-    <HeaderLink to="/agents" text="Agents" />
-    <HeaderLink to="/buyersrenters" text="Buyers/Renters" />
-  </>
+const NavMenu = props => {
+  return (
+    <>
+      <HeaderLink to="/" text="Home" />
+      <HeaderLink to="/agents" text="Agents" />
+      <HeaderLink to="/buyersrenters" text="Buyers/Renters" />
+    </>
   )
 }
-export default function Header ({dataIndex, navbar})  {
-
-  const [isflag, setflag] = useState();
+export default function Header({ dataIndex, navbar }) {
+  const [isflag, setflag] = useState()
   const listenScrollEvent = event => {
     if (window.scrollY < 100) {
-       setflag(false);
-       console.log(window.scrollY, isflag);
+      setflag(false)
+      console.log(window.scrollY, isflag)
     } else if (window.scrollY > 100) {
-       setflag(true)
-       console.log(window.scrollY, isflag);
+      setflag(true)
+      console.log(window.scrollY, isflag)
     }
-  };
+  }
 
   useEffect(() => {
-    window.addEventListener("scroll", listenScrollEvent);
-    return () => window.removeEventListener("scroll", listenScrollEvent);
-  }, []);
+    window.addEventListener("scroll", listenScrollEvent)
+    return () => window.removeEventListener("scroll", listenScrollEvent)
+  }, [])
   /**
    * Oftentimes we'll have different UI state
    * based on the router location.  Do it here.
@@ -54,41 +57,78 @@ export default function Header ({dataIndex, navbar})  {
   // console.log(dataIndex);
 
   return (
-<div className={styles.banner}>
-  {navbar ? <div className={styles.overlayalternate}></div> : <div className={styles.overlay}></div>}
-        <header className={styles.container}>
-          <nav className={isflag ? styles.rowbg : styles.row}>
-              <div className={styles.logo}>
-                <a href="/"><Img fluid={dataIndex.header[0].logo.fluid} imgStyle={{width: '25%',
-    height: '25%' , zIndex: 30}}/></a>
-              </div>
-                {navbar ?  <div className={styles.header}> <NavMenu /></div> : null }
-          </nav>
-          
-          <div className={navbar ?  styles.headerSectionContentsAlternate : styles.headerSectionContents }>
-            {navbar ?  <h2 className={styles.subtitlealt}>
-              { ReactHtmlParser (dataIndex.header[0].titleText)} 
-            </h2> :  <h2 className={styles.subtitle}>
-              { ReactHtmlParser (dataIndex.header[0].titleText)} 
-            </h2>}
-            <p className={styles.contents}>
-            {dataIndex.header[0].titleSubtext}
-            </p>
-            {navbar ? 
-              <>
-              <a className={styles.links}  href='#chatForm'><button className={styles.btnprimary}>{ReactHtmlParser(dataIndex.header[0].buttonsLinks)}</button></a>
-              {/* <FaArrowDown size={48} className={styles.bounce} /> */}
-              </>
-            :
-            <>
-            <Link className={styles.links} to="/agents"><button className={styles.btnprimary}>I 'm an agent</button></Link>
-            <Link className={styles.links} to="/buyersrenters"><button className={styles.btnprimary}>I 'm a buyer/renter</button></Link>
-            </>  
-           
-            }
-            
+    <div className={styles.banner}>
+      {navbar ? (
+        <div className={styles.overlayalternate}></div>
+      ) : (
+        <div className={styles.overlay}></div>
+      )}
+      <header className={styles.container}>
+        <nav className={isflag ? styles.rowbg : styles.row}>
+          <div className={styles.logo}>
+            <a href="/">
+              <Img
+                fluid={dataIndex.header[0].logo.fluid}
+                imgStyle={{ width: "25%", height: "25%", zIndex: 30 }}
+              />
+            </a>
           </div>
-        </header>
-      </div>
+          {navbar ? (
+            <div className={styles.header}>
+              <NavMenu />
+            </div>
+          ) : null}
+        </nav>
+
+        <div
+          className={
+            navbar
+              ? styles.headerSectionContentsAlternate
+              : styles.headerSectionContents
+          }
+        >
+          {navbar ? (
+            <>
+              <div style={{ width: "50%" }}>
+                <p>
+                  <img src={logo} alt="Logo" width="17%" />
+                </p>
+              </div>
+              <h2 className={styles.subtitlealt}>
+                {ReactHtmlParser(dataIndex.header[0].titleText)}
+              </h2>
+            </>
+          ) : (
+            <h2 className={styles.subtitle}>
+              {ReactHtmlParser(dataIndex.header[0].titleText)}
+            </h2>
+          )}
+          <p className={styles.contents}>{dataIndex.header[0].titleSubtext}</p>
+          {navbar ? (
+            <>
+              <div style={{ width: "62%" }}>
+                <a className={styles.links} href="#chatForm">
+                  <button className={styles.btnprimary}>
+                    {ReactHtmlParser(dataIndex.header[0].buttonsLinks)}
+                  </button>
+                </a>
+                <FaArrowDown size={48} className={styles.bounce} />
+              </div>
+            </>
+          ) : (
+            <>
+              <Link className={styles.links} to="/agents">
+                <button className={styles.btnprimary}>I 'm an agent</button>
+              </Link>
+              <Link className={styles.links} to="/buyersrenters">
+                <button className={styles.btnprimary}>
+                  I 'm a buyer/renter
+                </button>
+              </Link>
+            </>
+          )}
+        </div>
+      </header>
+    </div>
   )
 }
