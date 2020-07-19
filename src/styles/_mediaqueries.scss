@@ -12,12 +12,20 @@
 }
 @media screen and (min-width: 768px ) and (max-width: 1024px){
     .banner{ 
+        .header {
+             a{
+                padding: 0px;
+            }
+        }
         .container {
             .row{
               //height: 100px;
             }
             .headerSectionContentsAlternate {
                 width: 100%;
+                div {
+                    width: 100% !important; 
+                }
                 .subtitlealt{
                     text-align: center;
                 }
@@ -115,6 +123,10 @@
         }
         .headerSectionContentsAlternate {
             width: 100%;
+            div {
+                width: 100% !important;
+                
+            }
             .subtitlealt{
                 //width: 100%;
                 text-align: center;
@@ -126,6 +138,7 @@
                 font-size: 12pt;
                 margin: 0px !important;
             }
+           
             .btnprimary a{
                 align-items: center;
             }
