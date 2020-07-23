@@ -4,6 +4,7 @@ import { useSiteIndexdata} from '../hooks/use-site-indexdata'
 import Header from "../components/header"
 import styles from "./index.module.scss"
 import Layout from "../components/layout"
+
 const Index = ({location}) => {
   const dataIndex = useSiteIndexdata();
   console.log(dataIndex);
@@ -12,6 +13,7 @@ const Index = ({location}) => {
     <>
     <Layout><Header dataIndex={dataIndex.home} location={location} navbar={false}/>
     </Layout>
+   
    </>
   )
 }

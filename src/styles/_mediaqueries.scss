@@ -1,12 +1,8 @@
 @media screen and (max-width: 768px){
 .container {
     .headerSectionContentsAlternate {
-        .subtitlealt{
-            font-size: 16pt;
-        }
-        .contents {
-            font-size: 14pt;
-        }
+     
+       
     }
 }
 }
@@ -30,7 +26,6 @@
                     text-align: center;
                 }
                 .contents { 
-                    font-size: 9pt;
                     margin: 0px !important;
                 }
                 .btnprimary a{
@@ -40,11 +35,10 @@
             .headerSectionContents{
                 .subtitle{
                 width: 100%;
-                font-size: 18pt;
             }
             .contents {
                 width: 100%;
-                font-size: 15pt;
+                
                 margin-bottom: 5px;
             }
             .btnprimary{
@@ -55,12 +49,11 @@
             .headerSectionContentsAlternate{
                 .subtitle{
                     width: 100%;
-                    font-size: 10pt;
                     text-align: center;
                 }
                 .contents {
                     width: 100%;
-                    font-size: 9pt;
+                  
                     margin-bottom: 5px;
                     text-align: center;
                 }
@@ -82,7 +75,6 @@
         }
         h2, p{
             width: 100% !important;
-            font-size: 9pt;
             text-align: center !important;
         }
     }
@@ -119,8 +111,11 @@
             a{
                 padding: 0px;
             }
+            
            padding: 0px;
         }
+         
+        
         .headerSectionContentsAlternate {
             width: 100%;
             div {
@@ -128,14 +123,14 @@
                 
             }
             .subtitlealt{
-                //width: 100%;
+               
                 text-align: center;
-                font-size: 12pt;
+               
             }
             .contents {
                 width: 100%;
                 text-align: center;
-                font-size: 12pt;
+                
                 margin: 0px !important;
             }
            
@@ -147,11 +142,10 @@
             padding:45px 25px 25px 45px;
             .subtitle{
             width: 100%;
-            font-size: 12pt;
         }
         .contents {
             width: 100%;
-            font-size: 11pt;
+          
             margin-bottom: 10px;
         }
         .btnprimary{
@@ -159,6 +153,7 @@
         }
         }
     }
+   
     .sectionFive {
         margin: 0px !important;
         hr.special {
@@ -168,7 +163,6 @@
         }
         h2, p{
             width: 100% !important;
-            font-size: 16pt !important;
             text-align: center !important;
             padding: 10px;
         }
@@ -221,9 +215,6 @@
             }
             .headerSectionContentsAlternate {
                 padding: 5px;
-                .subtitlealt {
-                    font-size: 12pt;
-                }
             }
         }
     }

@@ -1,6 +1,7 @@
-@import './mediaqueries';
-@import './mixins';
-@import './variables';
+@import 'mediaqueries','mixins','variables','./menu';
+// @import './mixins';
+// @import './variables';
+//@import './menu';
 * {
     padding: 0px;
     margin: 0px;

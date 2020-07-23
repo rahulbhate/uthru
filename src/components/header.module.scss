@@ -132,7 +132,7 @@
 }
 .subtitle{
           color: #393451;
-          font-size: 28pt;
+          font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
           font-weight: 'bold';
           text-align: center;
           width: 25%;
@@ -141,7 +141,7 @@
         }
     .subtitlealt {
       color: #e5a191;
-      font-size: 28pt;
+      font-size: calc(18px + (30 - 14) * ((100vw - 300px) / (1600 - 300)));
       font-weight: 'bold';
       text-align: center;
       width: 25%;
@@ -151,14 +151,14 @@
        
         .spansection{
           text-decoration: underline;
-          font-size: 40pt;
+          font-size: calc(18px + (30 - 14) * ((100vw - 300px) / (1600 - 300)));
+          //font-size: 40pt;
           font-weight: bolder;
           color: #fba394;
           text-align: center;
         }
         h2{
           line-height: 1.5em;
-          font-size: 22pt;
           width: 100%;
         }
         .contents {
@@ -166,7 +166,7 @@
           margin: auto;
           margin-bottom: 30px;
           line-height: 1.5em;
-          font-size: 18pt;
+          font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
           font-weight: 200;
           font-family: 'muli';
         }

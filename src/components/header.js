@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+
 import ReactHtmlParser, {
   processNodes,
   convertNodeToElement,
@@ -6,7 +7,7 @@ import ReactHtmlParser, {
 } from "react-html-parser"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import win, { window } from "global/window"
+import  Sidebar  from "./sidebar"
 import { FaArrowDown } from "react-icons/fa"
 import styles from "./header.module.scss"
 import logo from "../images/uthrulogo_purpleBG.png"
@@ -29,7 +30,7 @@ const NavMenu = props => {
     <>
       <HeaderLink to="/" text="Home" />
       <HeaderLink to="/agents" text="Agents" />
-      <HeaderLink to="/buyersrenters" text="Buyers/Renters" />
+      <HeaderLink to="/buyersrenters" text="Buyers/Renters" />      
     </>
   )
 }
@@ -57,6 +58,8 @@ export default function Header({ dataIndex, navbar }) {
   // console.log(dataIndex);
 
   return (
+    <>
+   
     <div className={styles.banner}>
       {navbar ? (
         <div className={styles.overlayalternate}></div>
@@ -72,10 +75,12 @@ export default function Header({ dataIndex, navbar }) {
                 imgStyle={{ width: "25%", height: "25%", zIndex: 30 }}
               />
             </a>
+
           </div>
           {navbar ? (
             <div className={styles.header}>
               <NavMenu />
+              <Sidebar />
             </div>
           ) : null}
         </nav>
@@ -132,5 +137,6 @@ export default function Header({ dataIndex, navbar }) {
         </div>
       </header>
     </div>
+    </>
   )
 }
