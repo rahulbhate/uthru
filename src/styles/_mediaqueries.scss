@@ -1,6 +1,8 @@
 @media screen and (max-height: 1441000px) and (max-width: 1068px) and (min-height: 734px) and (min-width: 768px){
     .banner{ 
+        height: 100vh;
         .header {
+            float: none;
              a{
                 padding: 0px;
             }
@@ -8,7 +10,7 @@
         .container {  
             .headerSectionContentsAlternate {
                 width: 100%;
-                //padding:10px;
+                margin:5px;
                 div {
                     width: 100% !important; 
                 }
@@ -36,7 +38,7 @@
             }
             .headerSectionContentsAlternate{
                 width: 100%;
-                //padding: 10px;
+                margin: 5px;
                 .subtitle{
                     width: 100%;
                     text-align: center;
@@ -95,19 +97,21 @@
 }
 @media screen and (max-width: 734px) and (min-width: 0px) {
     .banner {
+        height: 100vh !important;
         .header {
             width: 100%;
             text-align: center;
+            float: none;
             a{
                 padding: 0px;
             } 
-           padding: 0px;
+          // padding: 0px;
           
         }
          
         .headerSectionContentsAlternate {
             width: 100%;
-            padding: 5px;
+            // margin: 5px;
             div {
                 width: 100% !important; 
             }
@@ -196,19 +200,21 @@
 }
 @media screen and (max-height: 733px) and (max-width: 767px) and (min-height: 0px) and (min-width: 735px) {
       .banner {
+          height: 100vh !important;
         .header {
             width: 100%;
             text-align: center;
+            float:none;
             a{
                 padding: 0px;
             } 
-           padding: 0px;
+           //padding: 0px;
           
         }
         
         .headerSectionContentsAlternate {
             width: 100%;
-            padding: 10px;
+            margin: 5px;
             div {
                 width: 100% !important; 
             }
@@ -296,17 +302,19 @@
 }
 @media screen and (max-height: 733px) and (max-width: 1068px) and (min-height: 0px) and (min-width: 768px) {
      .banner {
+         height: 100vh !important;
         .header {
             width: 100%;
             text-align: center;
+            float:none;
             a{
                 padding: 0px;
             } 
-           padding: 0px;
+           //padding: 0px;
         }
         .headerSectionContentsAlternate {
             width: 100%;
-            padding: 10px;
+            margin: 5px;
             div {
                 width: 100% !important; 
             }
