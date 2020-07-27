@@ -1,16 +1,14 @@
 @media screen and (max-height: 1441000px) and (max-width: 1068px) and (min-height: 734px) and (min-width: 768px){
     .banner{ 
         .header {
-            display: none;
              a{
                 padding: 0px;
-                
             }
         }
         .container {  
             .headerSectionContentsAlternate {
                 width: 100%;
-                padding:0px;
+                //padding:10px;
                 div {
                     width: 100% !important; 
                 }
@@ -30,7 +28,6 @@
             }
             .contents {
                 width: 100%;
-                
                 margin-bottom: 5px;
             }
             .btnprimary{
@@ -39,7 +36,7 @@
             }
             .headerSectionContentsAlternate{
                 width: 100%;
-                padding: 0px;
+                //padding: 10px;
                 .subtitle{
                     width: 100%;
                     text-align: center;
@@ -99,17 +96,18 @@
 @media screen and (max-width: 734px) and (min-width: 0px) {
     .banner {
         .header {
-            display: none;
             width: 100%;
             text-align: center;
             a{
                 padding: 0px;
             } 
            padding: 0px;
+          
         }
+         
         .headerSectionContentsAlternate {
             width: 100%;
-            padding: 0px;
+            padding: 5px;
             div {
                 width: 100% !important; 
             }
@@ -188,6 +186,7 @@
       }
       .footernavigation {
         line-height: 1.5em;
+         float: none;
         ul li {
             float: none;
         }
@@ -198,17 +197,18 @@
 @media screen and (max-height: 733px) and (max-width: 767px) and (min-height: 0px) and (min-width: 735px) {
       .banner {
         .header {
-            display: none;
             width: 100%;
             text-align: center;
             a{
                 padding: 0px;
             } 
            padding: 0px;
+          
         }
+        
         .headerSectionContentsAlternate {
             width: 100%;
-            padding: 0px;
+            padding: 10px;
             div {
                 width: 100% !important; 
             }
@@ -287,6 +287,7 @@
       }
       .footernavigation {
         line-height: 1.5em;
+         float: none;
         ul li {
             float: none;
         }
@@ -296,7 +297,6 @@
 @media screen and (max-height: 733px) and (max-width: 1068px) and (min-height: 0px) and (min-width: 768px) {
      .banner {
         .header {
-            display: none;
             width: 100%;
             text-align: center;
             a{
@@ -306,7 +306,7 @@
         }
         .headerSectionContentsAlternate {
             width: 100%;
-            padding: 0px;
+            padding: 10px;
             div {
                 width: 100% !important; 
             }
@@ -385,6 +385,7 @@
       }
       .footernavigation {
         line-height: 1.5em;
+         float: none;
         ul li {
             float: none;
         }

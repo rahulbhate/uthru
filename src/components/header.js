@@ -80,7 +80,7 @@ export default function Header({ dataIndex, navbar }) {
           {navbar ? (
             <div className={styles.header}>
               <NavMenu />
-              <Sidebar />
+              {/* <Sidebar /> */}
             </div>
           ) : null}
         </nav>
