@@ -4,7 +4,7 @@ import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from
 import { useSiteAboutdata } from '../hooks/use-site-aboutdata'
 import styles from "./index.module.scss"
 import Layout from '../components/layout'
-import RegisterForm from "../components/registerform"
+import ChatForm from "../components/chatform"
 import {
   FaMobile,
   FaClock,
@@ -60,7 +60,7 @@ const About = ( {location} ) => {
          <h2>{dataAbout.about.midcontent[0].titleText6}</h2>
        <p>{dataAbout.about.midcontent[0].titleSubtext6}</p></div>
        <div className={styles.detailsArea}>
-      <RegisterForm />
+      <ChatForm />
     </div>
      </Layout>
   )
