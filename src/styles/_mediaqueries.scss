@@ -1,22 +1,13 @@
-@media screen and (max-width: 768px){
-.container {
-    .headerSectionContentsAlternate {
-     
-       
-    }
-}
-}
-@media screen and (min-width: 768px ) and (max-width: 1024px){
+@media screen and (max-height: 1441000px) and (max-width: 1068px) and (min-height: 734px) and (min-width: 768px){
     .banner{ 
         .header {
+            display: none;
              a{
                 padding: 0px;
+                
             }
         }
-        .container {
-            .row{
-              //height: 100px;
-            }
+        .container {  
             .headerSectionContentsAlternate {
                 width: 100%;
                 div {
@@ -45,7 +36,6 @@
                 text-align: center;
             }
             }
-         
             .headerSectionContentsAlternate{
                 .subtitle{
                     width: 100%;
@@ -103,37 +93,31 @@
       }
     }
 }
-@media only screen and (min-width:320px) and (max-width: 414px) and (orientation: portrait){
+@media screen and (max-width: 734px) and (min-width: 0px) {
     .banner {
         .header {
+            display: none;
             width: 100%;
             text-align: center;
             a{
                 padding: 0px;
-            }
-            
+            } 
            padding: 0px;
         }
-         
-        
         .headerSectionContentsAlternate {
             width: 100%;
             div {
-                width: 100% !important;
-                
+                width: 100% !important; 
             }
             .subtitlealt{
-               
                 text-align: center;
                
             }
             .contents {
                 width: 100%;
                 text-align: center;
-                
                 margin: 0px !important;
             }
-           
             .btnprimary a{
                 align-items: center;
             }
@@ -207,28 +191,198 @@
     }
 
 }
-@media screen and (min-width: 768px ) and (max-width: 1024px) and (orientation: landscape) {
-    .banner {
-        .container {  
-            .headerSectionContents {
-                padding: 10px; 
+@media screen and (max-height: 733px) and (max-width: 767px) and (min-height: 0px) and (min-width: 735px) {
+      .banner {
+        .header {
+            display: none;
+            width: 100%;
+            text-align: center;
+            a{
+                padding: 0px;
+            } 
+           padding: 0px;
+        }
+        .headerSectionContentsAlternate {
+            width: 100%;
+            div {
+                width: 100% !important; 
             }
-            .headerSectionContentsAlternate {
-                padding: 5px;
+            .subtitlealt{
+                text-align: center;
+               
+            }
+            .contents {
+                width: 100%;
+                text-align: center;
+                margin: 0px !important;
+            }
+            .btnprimary a{
+                align-items: center;
             }
         }
+        .headerSectionContents{
+            padding:45px 25px 25px 45px;
+            .subtitle{
+            width: 100%;
+        }
+        .contents {
+            width: 100%;
+          
+            margin-bottom: 10px;
+        }
+        .btnprimary{
+            text-align: center;
+        }
+        }
+    }
+   
+    .sectionFive {
+        margin: 0px !important;
+        hr.special {
+            width: 100px;
+            margin: auto;
+            margin-top: 10px;
+        }
+        h2, p{
+            width: 100% !important;
+            text-align: center !important;
+            padding: 10px;
+        }
+    }
+    .detailsArea {
+        width: 100% !important;
+    }
+        .howWorks {
+            padding: 12px !important;
+            margin: 0px !important;
+        }
+        .bulletHeadings {
+            font-size: 18pt !important;
+        }
+        .bulletContents {
+            font-size: 14pt !important;
+        }
+        .sectionColumns {
+            width: 100%;
+            margin: 0px !important;
+            div {
+                width: 100% !important;
+            }
+        }
+    
+    .footercolumns {
+        float: none !important;
+        min-height: 250px;
+        width: 100% !important;
+        text-align: center;
+
+      .footerlogo{
+        text-align: center;
+        width: 100%;
+      }
+      .footernavigation {
+        line-height: 1.5em;
+        ul li {
+            float: none;
+        }
+      }
     }
 }
-
-@media screen and (min-width: 320px ) and (max-width: 480px)and (orientation: landscape) {
-    .banner {
-        border: 10px solid red;
+@media screen and (max-height: 733px) and (max-width: 1068px) and (min-height: 0px) and (min-width: 768px) {
+     .banner {
+        .header {
+            display: none;
+            width: 100%;
+            text-align: center;
+            a{
+                padding: 0px;
+            } 
+           padding: 0px;
+        }
+        .headerSectionContentsAlternate {
+            width: 100%;
+            div {
+                width: 100% !important; 
+            }
+            .subtitlealt{
+                text-align: center;
+               
+            }
+            .contents {
+                width: 100%;
+                text-align: center;
+                margin: 0px !important;
+            }
+            .btnprimary a{
+                align-items: center;
+            }
+        }
+        .headerSectionContents{
+            padding:45px 25px 25px 45px;
+            .subtitle{
+            width: 100%;
+        }
+        .contents {
+            width: 100%;
+          
+            margin-bottom: 10px;
+        }
+        .btnprimary{
+            text-align: center;
+        }
+        }
     }
-}
-
-@media only screen and (orientation: landscape) {  
-    .banner {
-      
-       
+   
+    .sectionFive {
+        margin: 0px !important;
+        hr.special {
+            width: 100px;
+            margin: auto;
+            margin-top: 10px;
+        }
+        h2, p{
+            width: 100% !important;
+            text-align: center !important;
+            padding: 10px;
+        }
     }
+    .detailsArea {
+        width: 100% !important;
+    }
+        .howWorks {
+            padding: 12px !important;
+            margin: 0px !important;
+        }
+        .bulletHeadings {
+            font-size: 18pt !important;
+        }
+        .bulletContents {
+            font-size: 14pt !important;
+        }
+        .sectionColumns {
+            width: 100%;
+            margin: 0px !important;
+            div {
+                width: 100% !important;
+            }
+        }
+    
+    .footercolumns {
+        float: none !important;
+        min-height: 250px;
+        width: 100% !important;
+        text-align: center;
+
+      .footerlogo{
+        text-align: center;
+        width: 100%;
+      }
+      .footernavigation {
+        line-height: 1.5em;
+        ul li {
+            float: none;
+        }
+      }
+    }
+
 }
