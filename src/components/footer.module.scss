@@ -20,7 +20,7 @@
     margin-bottom: 88px;
     a {
       color: #FFFFFF;
-      font-size: $h6;
+      font-size: $h5;
     }
     a:hover{
       color: #e8a597;
@@ -37,7 +37,7 @@
     padding: 0;
     ul {
       list-style-type: none;
-      font-size: $h6;
+      font-size: $link;
     }
     li{
       float: left;
@@ -54,7 +54,7 @@
   
   .scrolltop {
     color: #FFFFFF;
-    font-size: $h5;
+    font-size: $link;
     border-bottom: 2px solid #e5a191;
     padding-bottom: 5px;
     text-decoration: none;

@@ -93,9 +93,9 @@ export default function Header({ dataIndex, navbar }) {
             {navbar ? (
               <>
                 <div style={{ width: "50%" }}>
-                  <p>
+                  <>
                     <img src={logo} alt="Logo" width="17%" />
-                  </p>
+                  </>
                 </div>
                 <h1 className={styles.subtitlealt}>
                   {ReactHtmlParser(dataIndex.header[0].titleText)}

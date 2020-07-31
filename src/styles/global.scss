@@ -1,19 +1,19 @@
 @import 'mediaqueries','mixins','variables';
 
 $baseline: 2rem;
-
-$minScreen: 20rem;
+$minScreen: 17.5rem;
 $maxScreen: 50rem;
 $minFont: .8rem;
 $maxFont: 2rem;
 
-$h1: 1rem;
+$h1: 1.15rem;
 $h2: 1.5rem;
 $h3: 1.25rem;
 $h4: 1rem;
 $h5: .875rem;
 $h6: .500rem;
-$p : .875rem;
+$p : .685rem;
+$link: .545rem;
 * {
     padding: 0px;
     margin: 0px;
@@ -22,9 +22,8 @@ $p : .875rem;
   }
 html{
   @include fluid-type(font-size, $minScreen, $maxScreen, $minFont, $maxFont);
-  //font-size: 16px;
+  font-size: 16px;
 }
-  
 $container-width: 100%;// wrapper ---
 //$site-width: 1680px; /// inside wrapper site width margin 0 auto; image width 1680px
 $color-pallet-background: #e5a191;
@@ -38,11 +37,12 @@ h3,
 h4,
 h5,
 h6{
-	font-weight: 600;
-	//margin-bottom: $baseline;
+	font-weight: 400;
+	//margin-top: $baseline;
+	
 }
 p {
-  font-weight: 500;
+  font-weight: 200;
   //margin-bottom: $baseline;
 }
 h1 {
@@ -81,5 +81,9 @@ h6 {
 }
 p{
   font-size: $p;
+  font-weight: 200;
 	//line-height: $h3;
 }
+// .link {
+// 	font-size: $link;
+// }

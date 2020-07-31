@@ -93,13 +93,13 @@
         width: 40%;
         color: $color-pallet-footer;
         font-weight: bold;
-        font-size: $h4;
+        font-size: $h3;
         text-align: left;
         padding-bottom: 30px;
     }
     p{
         width: 50%;
-        font-size: $h5;
+        font-size: $p;
         font-weight: 200;
         text-align: left;
     }
@@ -125,13 +125,13 @@
     }
     h2{
         color: $color-pallet-background;
-       font-size: $h4;
+        font-size: $h4;
         width: 40%;
         margin: auto;
     }
     p{
         color: $color-pallet-footer;
-        font-size: $h5;
+        font-size: $p;
         width: 80%;
         font-weight: 200;
         margin: auto;
@@ -170,7 +170,7 @@
             font-size: $h4;
         }
         p{
-            font-size: $h6;
+            font-size: $p;
         }
     }
 
