@@ -8,8 +8,12 @@
              a{
                 padding: 0px;
             }
+           
         }
-        .container {  
+        .container { 
+            .logo {
+                width: 60%;
+            } 
             .headerSectionContentsAlternate {
                 width: 100%;
                 div {
@@ -107,7 +111,6 @@
             } 
           
         }
-         
         .headerSectionContentsAlternate {
             width: 100%;
             div {
@@ -161,12 +164,6 @@
         .howWorks {
             padding: 12px !important;
             margin: 0px !important;
-        }
-        .bulletHeadings {
-            font-size: 18pt !important;
-        }
-        .bulletContents {
-            font-size: 14pt !important;
         }
         .sectionColumns {
             width: 100%;
@@ -263,12 +260,6 @@
             padding: 12px !important;
             margin: 0px !important;
         }
-        .bulletHeadings {
-            font-size: 18pt !important;
-        }
-        .bulletContents {
-            font-size: 14pt !important;
-        }
         .sectionColumns {
             width: 100%;
             margin: 0px !important;
@@ -360,12 +351,6 @@
         .howWorks {
             padding: 12px !important;
             margin: 0px !important;
-        }
-        .bulletHeadings {
-            font-size: 18pt !important;
-        }
-        .bulletContents {
-            font-size: 14pt !important;
         }
         .sectionColumns {
             width: 100%;

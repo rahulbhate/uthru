@@ -7,7 +7,7 @@ import ReactHtmlParser, {
 } from "react-html-parser"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import  Sidebar  from "./sidebar"
+import Sidebar from "./sidebar"
 import { FaArrowDown } from "react-icons/fa"
 import styles from "./header.module.scss"
 import logo from "../images/uthrulogo_purpleBG.png"
@@ -30,7 +30,7 @@ const NavMenu = props => {
     <>
       <HeaderLink to="/" text="Home" />
       <HeaderLink to="/agents" text="Agents" />
-      <HeaderLink to="/buyersrenters" text="Buyers/Renters" />      
+      <HeaderLink to="/buyersrenters" text="Buyers/Renters" />
     </>
   )
 }
@@ -59,84 +59,84 @@ export default function Header({ dataIndex, navbar }) {
 
   return (
     <>
-   
-    <div className={styles.banner}>
-      {navbar ? (
-        <div className={styles.overlayalternate}></div>
-      ) : (
-        <div className={styles.overlay}></div>
-      )}
-      <header className={styles.container}>
-        <nav className={isflag ? styles.rowbg : styles.row}>
-          <div className={styles.logo}>
-            <a href="/">
-              <Img
-                fluid={dataIndex.header[0].logo.fluid}
-                imgStyle={{ width: "25%", height: "25%", zIndex: 30 }}
-              />
-            </a>
-
-          </div>
-          {navbar ? (
-            <div className={styles.header}>
-              <NavMenu />
-              {/* <Sidebar /> */}
+      <div className={styles.banner}>
+        {navbar ? (
+          <div className={styles.overlayalternate}></div>
+        ) : (
+          <div className={styles.overlay}></div>
+        )}
+        <header className={styles.container}>
+          <nav className={isflag ? styles.rowbg : styles.row}>
+            <div className={styles.logo}>
+              <a href="/">
+                <Img
+                  fluid={dataIndex.header[0].logo.fluid}
+                  imgStyle={{ width: "25%", height: "25%", zIndex: 30 }}
+                />
+              </a>
             </div>
-          ) : null}
-        </nav>
+            {navbar ? (
+              <div className={styles.header}>
+                <NavMenu />
+                {/* <Sidebar /> */}
+              </div>
+            ) : null}
+          </nav>
 
-        <div
-          className={
-            navbar
-              ? styles.headerSectionContentsAlternate
-              : styles.headerSectionContents
-          }
-        >
-          {navbar ? (
-            <>
-              <div style={{ width: "50%" }}>
-                <p>
-                  <img src={logo} alt="Logo" width="17%" />
-                </p>
-              </div>
-              <h2 className={styles.subtitlealt}>
+          <div
+            className={
+              navbar
+                ? styles.headerSectionContentsAlternate
+                : styles.headerSectionContents
+            }
+          >
+            {navbar ? (
+              <>
+                <div style={{ width: "50%" }}>
+                  <p>
+                    <img src={logo} alt="Logo" width="17%" />
+                  </p>
+                </div>
+                <h1 className={styles.subtitlealt}>
+                  {ReactHtmlParser(dataIndex.header[0].titleText)}
+                </h1>
+              </>
+            ) : (
+              <h1 className={styles.subtitle}>
                 {ReactHtmlParser(dataIndex.header[0].titleText)}
-              </h2>
-            </>
-          ) : (
-            <h2 className={styles.subtitle}>
-              {ReactHtmlParser(dataIndex.header[0].titleText)}
-            </h2>
-          )}
-          <p className={styles.contents}>{dataIndex.header[0].titleSubtext}</p>
-          {navbar ? (
-            <>
-              <div style={{ width: "62%" }}>
-                <a className={styles.links} href="#chatForm">
+              </h1>
+            )}
+            <p className={styles.contents}>
+              {dataIndex.header[0].titleSubtext}
+            </p>
+            {navbar ? (
+              <>
+                <div style={{ width: "62%" }}>
+                  <a className={styles.links} href="#chatForm">
+                    <button className={styles.btnprimary}>
+                      {ReactHtmlParser(dataIndex.header[0].buttonsLinks)}
+                    </button>
+                  </a>
+                </div>
+                <div style={{ width: "40%", marginTop: "20px" }}>
+                  <FaArrowDown size={48} className={styles.bounce} />
+                </div>
+              </>
+            ) : (
+              <>
+                <Link className={styles.links} to="/agents">
+                  <button className={styles.btnprimary}>I 'm an agent</button>
+                </Link>
+                <Link className={styles.links} to="/buyersrenters">
                   <button className={styles.btnprimary}>
-                    {ReactHtmlParser(dataIndex.header[0].buttonsLinks)}
+                    I 'm a buyer/renter
                   </button>
-                </a>
-              </div>
-              <div style={{ width: "40%", marginTop: "20px" }}>
-                <FaArrowDown size={48} className={styles.bounce} />
-              </div>
-            </>
-          ) : (
-            <>
-              <Link className={styles.links} to="/agents">
-                <button className={styles.btnprimary}>I 'm an agent</button>
-              </Link>
-              <Link className={styles.links} to="/buyersrenters">
-                <button className={styles.btnprimary}>
-                  I 'm a buyer/renter
-                </button>
-              </Link>
-            </>
-          )}
-        </div>
-      </header>
-    </div>
+                </Link>
+              </>
+            )}
+          </div>
+        </header>
+      </div>
     </>
   )
 }

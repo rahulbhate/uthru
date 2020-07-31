@@ -1,14 +1,15 @@
 @import '../styles/global';
 
+
 .banner {
-  background-image: url('../images/kitchen-female.png');
+  background: url('../images/kitchen-female.png') 0 0 / cover;
   height: 80vh;
   position: relative;
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background-attachment: fixed;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
 }
 .banner > * {
   position: relative;
@@ -16,7 +17,6 @@
 }
 .link {
   color: white;
-  font-size: 13pt;
   font-weight: bold;
   text-decoration: none;
   margin: 20px;
@@ -74,14 +74,12 @@
     height: 100px;
     position: fixed;
     opacity: 0.6;
-    //background-color: rgba(0,0,0,0.3);
 }
 
 .rowbg {
     width: 100%;
     height: 100px;
     position: fixed;
-    //opacity: 0.9;
     z-index: inherit;
   background: #393451;
 }
@@ -132,17 +130,13 @@
 }
 .subtitle{
           color: #393451;
-          font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-          font-weight: 'bold';
           text-align: center;
-          width: 25%;
+          width: 28%;
           margin: auto;
           margin-bottom: 25px;
         }
     .subtitlealt {
       color: #e5a191;
-      font-size: calc(18px + (30 - 14) * ((100vw - 300px) / (1600 - 300)));
-      font-weight: 'bold';
       text-align: center;
       width: 25%;
       margin: auto;
@@ -151,24 +145,14 @@
        
         .spansection{
           text-decoration: underline;
-          font-size: calc(18px + (30 - 14) * ((100vw - 300px) / (1600 - 300)));
-          //font-size: 40pt;
           font-weight: bolder;
           color: #fba394;
           text-align: center;
-        }
-        h2{
-          line-height: 1.5em;
-          width: 100%;
         }
         .contents {
           width: 50%;
           margin: auto;
           margin-bottom: 30px;
-          line-height: 1.5em;
-          font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-          font-weight: 200;
-          font-family: 'muli';
         }
         .btnprimary{
           @include button-primary;

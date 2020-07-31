@@ -14,12 +14,13 @@
     color: #e5a191;
     margin-top: 0px;
     margin-bottom: 15px;
+    font-size: $h5;
   }
   .footermail{
     margin-bottom: 88px;
     a {
       color: #FFFFFF;
-      font-size: calc(16px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
+      font-size: $h6;
     }
     a:hover{
       color: #e8a597;
@@ -36,7 +37,7 @@
     padding: 0;
     ul {
       list-style-type: none;
-      font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+      font-size: $h6;
     }
     li{
       float: left;
@@ -53,7 +54,7 @@
   
   .scrolltop {
     color: #FFFFFF;
-    font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-size: $h5;
     border-bottom: 2px solid #e5a191;
     padding-bottom: 5px;
     text-decoration: none;

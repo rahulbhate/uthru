@@ -1,15 +1,85 @@
 @import 'mediaqueries','mixins','variables';
-// @import './mixins';
-// @import './variables';
-//@import './menu';
+
+$baseline: 2rem;
+
+$minScreen: 20rem;
+$maxScreen: 50rem;
+$minFont: .8rem;
+$maxFont: 2rem;
+
+$h1: 1rem;
+$h2: 1.5rem;
+$h3: 1.25rem;
+$h4: 1rem;
+$h5: .875rem;
+$h6: .500rem;
+$p : .875rem;
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    //font-size: 16px;
   }
-
+html{
+  @include fluid-type(font-size, $minScreen, $maxScreen, $minFont, $maxFont);
+  //font-size: 16px;
+}
+  
 $container-width: 100%;// wrapper ---
 //$site-width: 1680px; /// inside wrapper site width margin 0 auto; image width 1680px
 $color-pallet-background: #e5a191;
 $color-pallet-footer: #393451;
 $color-pallet-links: #ffffff;
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-weight: 600;
+	//margin-bottom: $baseline;
+}
+p {
+  font-weight: 500;
+  //margin-bottom: $baseline;
+}
+h1 {
+	font-size: $h1;
+	//line-height: $h1;
+	//margin-top: calc((#{$baseline} - #{$h1}) + #{$baseline});
+}
+
+h2 {
+	font-size: $h2;
+	//line-height: $h2;
+
+}
+
+h3 {
+	font-size: $h3;
+	//line-height: $h3;
+	//margin-top: calc((#{$baseline} - #{$h3}) + #{$baseline}*2);
+}
+
+h4 {
+	font-size: $h4;
+	//line-height: $h4;
+	//margin-top: calc((#{$baseline} - #{$h4}) + #{$baseline}*2);
+}
+
+h5 {
+	font-size: $h5;
+	//line-height: $h5;
+	//margin-top: calc((#{$baseline} - #{$h5}) + #{$baseline}*2);
+}
+h6 {
+	font-size: $h6;
+	//line-height: $h1;
+	//margin-top: calc((#{$baseline} - #{$h1}) + #{$baseline});
+}
+p{
+  font-size: $p;
+	//line-height: $h3;
+}
