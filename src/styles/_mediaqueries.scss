@@ -1,381 +1,71 @@
-@media screen and (max-height: 1441000px) and (max-width: 1068px) and (min-height: 734px) and (min-width: 768px){
-    .banner{ 
-        height: 100vh;
-        .header {
-            width: 100%;
-            text-align: center;
-            float: none;
-             a{
-                padding: 0px;
-            }
-           
-        }
-        .container { 
-            .logo {
-                width: 60%;
-            } 
-            .headerSectionContentsAlternate {
-                width: 100%;
-                div {
-                    width: 100% !important; 
-                }
-                .subtitlealt{
-                    text-align: center;
-                }
-                .contents { 
-                    margin: 0px !important;
-                }
-                .btnprimary a{
-                    align-items: center;
-                }
-            }
-            .headerSectionContents{
-                .subtitle{
-                width: 100%;
-            }
-            .contents {
-                width: 100%;
-                margin-bottom: 5px;
-            }
-            .btnprimary{
-                text-align: center;
-            }
-            }
-            .headerSectionContentsAlternate{
-                width: 100%;
-                .subtitle{
-                    width: 100%;
-                    text-align: center;
-                }
-                .contents {
-                    width: 100%;
-                  
-                    margin-bottom: 5px;
-                    text-align: center;
-                }
-                .btnprimary{
-                   text-align: center;
-                }
-            }
-        }
-    }
-    .detailsArea {
-        width: 100% !important;
-    }
-    .sectionFive {
-        margin: 20px !important;
-       
-        hr.special {
-            width: 100px;
-            margin: auto;
-        }
-        h2, p{
-            width: 100% !important;
-            text-align: center !important;
-        }
-    }
-    .howWorks {
-        padding: 5px !important;
-    }
-    .sectionColumns {
-        div {
-            width: 100% !important;
-        }
-    }
-    .footercolumns {
-      float: none !important;
-      width: 100% !important;
-      min-height: 250px;
-      text-align: center;
-      .footerlogo{
-        text-align: center;
-      }
-      .footernavigation {
-        line-height: 2.5em;
-        float: none;
-        ul li{
-          float: none;
-        }
-      }
-    }
-}
-@media screen and (max-width: 734px) and (min-width: 0px) {
-    .banner {
-        height: 100vh !important;
-        .header {
-            width: 100%;
-            text-align: left;
-            float: none;
-            a{
-                padding: 0px;
-            } 
-          
-        }
-        .headerSectionContentsAlternate {
-            width: 100%;
-            div {
-                width: 100% !important; 
-            }
-            .subtitlealt{
-                text-align: center;
-               
-            }
-            .contents {
-                width: 100%;
-                text-align: center;
-                margin: 0px !important;
-            }
-            .btnprimary a{
-                align-items: center;
-            }
-        }
-        .headerSectionContents{
-            padding:45px 25px 25px 45px;
-            .subtitle{
-            width: 100%;
-        }
-        .contents {
-            width: 100%;
-          
-            margin-bottom: 10px;
-        }
-        .btnprimary{
-            text-align: center;
-        }
-        }
+@media(max-width: 700px) {
+ .mainMenu {
+              //display: flex;
+            //  flex-direction: column;
+            //  position: absolute;
+            //  top:0;
+            //  left:0;
+            //  background-color:#393451;
+            //  width:50%;
+            //  text-align: center;
+            //  transform : translateX(-20px);
+        // margin:0px !important;
+        // padding: 0px !important;
     }
    
-    .sectionFive {
+    .mainNav .mainMenu .link, .mainNavAlternateColor .mainMenu .link {
+        //display: none !important;
+        // padding: 12px;
+        // margin: 0px 10px 10px -20px; 
+    }
+    .mainNav .burgerMenu , .mainNavAlternateColor .burgerMenu{
+        display: block;
+    }
+    .mainNav .burgerMenu:hover {
+        opacity: 0.5;
+    }
+    .mainNavNocolor img{
+         display: block;
+        margin: auto !important;
+    }
+    .showcase > h1, .showcase > p{
+        width: 100% !important;
+        text-align: center !important;
         margin: 0px !important;
-        hr.special {
-            width: 100px;
-            margin: auto;
-            margin-top: 10px;
-        }
-        h2, p{
-            width: 100% !important;
-            text-align: center !important;
-            padding: 10px;
-        }
     }
-    .detailsArea {
+    .showcaseAlternate > h1, .showcaseAlternate > p {
         width: 100% !important;
     }
-        .howWorks {
-            padding: 12px !important;
-            margin: 0px !important;
-        }
-        .sectionColumns {
-            width: 100%;
-            margin: 0px !important;
-            div {
-                width: 100% !important;
-            }
-        }
-    
-    .footercolumns {
-        float: none !important;
-        min-height: 250px;
-        width: 100% !important;
-        text-align: center;
-
-      .footerlogo{
-        text-align: center;
-        width: 100%;
+    .howWorks {
+        margin: 0px !important;
       }
-      .footernavigation {
-        line-height: 1.5em;
-         float: none;
-        ul li {
-            float: none;
-        }
-      }
+    .homeCards {
+        grid-template-columns: 1fr !important;
+        margin: 0px !important;
     }
+    .section {
+        text-align: center;
+      }
+      .special {
+        margin: auto;
+      }
+    .footer {
+        text-align: center;
+        justify-content: center;
+      }
+      .footer ul {
+        text-align: center;
+        flex-direction: column;
+      }
+      .footer section h2 {
+        margin-right: 0px;
+        text-align: center;
+      }
+}
+@media screen and (max-width: 734px) and (min-width: 0px) {
+   
 
 }
 @media screen and (max-height: 733px) and (max-width: 767px) and (min-height: 0px) and (min-width: 735px) {
-      .banner {
-          height: 100vh !important;
-        .header {
-            width: 100%;
-            text-align: right;
-            float:none;
-            a{
-                padding: 0px;
-            } 
-          
-        }
-        
-        .headerSectionContentsAlternate {
-            width: 100%;
-            div {
-                width: 100% !important; 
-            }
-            .subtitlealt{
-                text-align: center;
-               
-            }
-            .contents {
-                width: 100%;
-                text-align: center;
-                margin: 0px !important;
-            }
-            .btnprimary a{
-                align-items: center;
-            }
-        }
-        .headerSectionContents{
-            padding:45px 25px 25px 45px;
-            .subtitle{
-            width: 100%;
-        }
-        .contents {
-            width: 100%;
-          
-            margin-bottom: 10px;
-        }
-        .btnprimary{
-            text-align: center;
-        }
-        }
-    }
-   
-    .sectionFive {
-        margin: 0px !important;
-        hr.special {
-            width: 100px;
-            margin: auto;
-            margin-top: 10px;
-        }
-        h2, p{
-            width: 100% !important;
-            text-align: center !important;
-            padding: 10px;
-        }
-    }
-    .detailsArea {
-        width: 100% !important;
-    }
-        .howWorks {
-            padding: 12px !important;
-            margin: 0px !important;
-        }
-        .sectionColumns {
-            width: 100%;
-            margin: 0px !important;
-            div {
-                width: 100% !important;
-            }
-        }
-    
-    .footercolumns {
-        float: none !important;
-        min-height: 250px;
-        width: 100% !important;
-        text-align: center;
-
-      .footerlogo{
-        text-align: center;
-        width: 100%;
-      }
-      .footernavigation {
-        line-height: 1.5em;
-         float: none;
-        ul li {
-            float: none;
-        }
-      }
-    }
-}
-@media screen and (max-height: 733px) and (max-width: 1068px) and (min-height: 0px) and (min-width: 768px) {
-     .banner {
-         height: 100vh !important;
-        .header {
-            width: 100%;
-            text-align: right;
-            float:none;
-            a{
-                padding: 0px;
-            } 
-        }
-        .headerSectionContentsAlternate {
-            width: 100%;
-            div {
-                width: 100% !important; 
-            }
-            .subtitlealt{
-                text-align: center;
-               
-            }
-            .contents {
-                width: 100%;
-                text-align: center;
-                margin: 0px !important;
-            }
-            .btnprimary a{
-                align-items: center;
-            }
-        }
-        .headerSectionContents{
-            padding:45px 25px 25px 45px;
-            .subtitle{
-            width: 100%;
-        }
-        .contents {
-            width: 100%;
-          
-            margin-bottom: 10px;
-        }
-        .btnprimary{
-            text-align: center;
-        }
-        }
-    }
-   
-    .sectionFive {
-        margin: 0px !important;
-        hr.special {
-            width: 100px;
-            margin: auto;
-            margin-top: 10px;
-        }
-        h2, p{
-            width: 100% !important;
-            text-align: center !important;
-            padding: 10px;
-        }
-    }
-    .detailsArea {
-        width: 100% !important;
-    }
-        .howWorks {
-            padding: 12px !important;
-            margin: 0px !important;
-        }
-        .sectionColumns {
-            width: 100%;
-            margin: 0px !important;
-            div {
-                width: 100% !important;
-            }
-        }
-    
-    .footercolumns {
-        float: none !important;
-        min-height: 250px;
-        width: 100% !important;
-        text-align: center;
-
-      .footerlogo{
-        text-align: center;
-        width: 100%;
-      }
-      .footernavigation {
-        line-height: 1.5em;
-         float: none;
-        ul li {
-            float: none;
-        }
-      }
-    }
+      
 }

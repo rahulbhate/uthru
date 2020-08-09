@@ -1,12 +1,6 @@
 @import '../styles/global';
 .container {
   width: $container-width;
+  // max-width: $site-width;
   background-color: $color-pallet-background;
-}
-.content {
-  text-align: center;
-  a {
-    color: white;
-    font-size: $link;
-  }  
 }

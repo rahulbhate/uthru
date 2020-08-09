@@ -1,28 +1,128 @@
 @import '../styles/global';
 
-
-.banner {
-  background: url('../images/kitchen-female.png') 0 0 / cover;
+.showcase {
+  width: 100%;
   height: 80vh;
-  position: relative;
-  /* Create the parallax scrolling effect */
-  // background-attachment: fixed;
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
+  background: url('../images/kitchen-female.png') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  justify-content: center;
+  align-self: center;
+  line-height: 2.5rem;
+  
 }
-.banner > * {
-  position: relative;
+.showcaseAlternate {
+  width: 100%;
+  height: 80vh;
+  background: url('../images/kitchen-female.png') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  line-height: 2.5rem;
+}
+.showcaseAlternate > h1, .showcaseAlternate > p , .showcaseAlternate > img{
+  color: white;
+  z-index: 10;
+  width: 40%;
+  font-size: $h5;
+  padding: 10px 0 0 10px;
+}
+.showcase > h1, .showcase > p , .showcase > img{
+  color: white;
+  z-index: 10;
+  width: 40%;
+  font-size: $h5;
+  padding: 10px 0 0 10px;
+  margin-left: 110px;
+}
+
+.showcase .btnprimary , .bounce {
+  margin-top: 20px;
+  margin-left: 110px;
   z-index: 10;
 }
+
+  /* Nav */
+  .mainNav {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 16px;
+    background-color:rgba(0,0,0,0.1);
+    z-index: 200;
+  }
+  .mainNavAlternateColor {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 16px;
+    background-color: #393451;
+    z-index: 200;
+
+  }
+  .mainNavNocolor {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 16px;
+    z-index: 200;
+  }
+  
+  // .mainNav .logo {
+  //   width: 110px;
+  //   margin: 30px;
+  // }
+  
+   .mainNav .mainMenu, .mainNavAlternateColor .mainMenu {
+    display: flex;
+    justify-content:flex-end;
+    margin-right: 10px;
+    flex: 1;
+  }
+  
+  .mainMenu {
+    padding: 0 40px;
+  }
+.burgerMenu {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+  
+  //  .mainNav {
+  //   flex: 1;
+  //   margin-left: 20px;
+  // }
+  
 .link {
   color: white;
   font-weight: bold;
   text-decoration: none;
-  margin: 20px;
+  padding-bottom: 10px;
+   margin: 20px;
+  // margin-right: 40px;
   &:hover {
     color: $color-pallet-background;
-    text-decoration:underline;
+    border-bottom: 2px solid #e5a190;
+   
   }
 }
 .overlay{
@@ -31,14 +131,12 @@
   left: 0;
   opacity: 0.9;
   width: 100%;
-  height: 100%;
-  z-index: 1;
+  height: 80%;
   background-color:#e5a191;
 }
 .bounce {
   position: absolute;
-  top: 10;
-  left: 1;
+ //left: 430px;
   animation: bounce 2s infinite;
 }
 
@@ -59,46 +157,10 @@
   left: 0;
   opacity: 0.8;
   width: 100%;
-  height: 100%;
-  z-index: 1;
+  height: 80%;
   background-color:#393451;
 }
-.logo{
-    width: 27%;
-    float: left;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-.row {
-    width: 100%;
-    height: 100px;
-    position: fixed;
-    opacity: 0.6;
-}
 
-.rowbg {
-    width: 100%;
-    height: 100px;
-    position: fixed;
-    z-index: inherit;
-  background: #393451;
-}
-.header {
-  //position: fixed;*/
-  width: 70%;
-  height: 100px;
-  text-align: right;
-  padding: 30px;
-  float:right;
-  a 
-  {
-    padding: 50px;
-  }
-}
-.headerSectionContents{
-       padding:135px 100px 50px 100px;
-       text-align: center;
-}
 .headerSectionContentsAlternate {
   width: 60%;
   text-align: center; 
@@ -114,46 +176,7 @@
     text-align: left;
     margin-left: 200px;
   }
-
-
 }
-.spantitlemain {
-      font-size: 40pt;
-      text-align: center;
-      align-items: center;
-}
-.spanFuture{
-        color: white;
-        font-weight: 'bolder';
-        text-align: center;
-        align-items: center;
-}
-.subtitle{
-          color: #393451;
-          text-align: center;
-          width: 28%;
-          margin: auto;
-          margin-bottom: 25px;
-        }
-    .subtitlealt {
-      color: #e5a191;
-      text-align: center;
-      width: 25%;
-      margin: auto;
-      margin-bottom: 25px;
-    }
-       
-        .spansection{
-          text-decoration: underline;
-          font-weight: bolder;
-          color: #fba394;
-          text-align: center;
-        }
-        .contents {
-          width: 50%;
-          margin: auto;
-          margin-bottom: 30px;
-        }
         .btnprimary{
           @include button-primary;
         }

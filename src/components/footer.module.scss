@@ -1,15 +1,17 @@
 @import '../styles/global';
-.footercontainer {
-    padding: 50px;
-    background-color: #393451;
-    min-height: 270px;
-    width: 100%;
-  }
-  .footercolumns{
-    width: 50%;
-    float: left;
-    background-color: #393451;
-  }
+footer {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap: wrap;
+  padding: 50px;
+  background-color: #393451;
+  line-height: 2rem;
+}
+footer section h2{
+  text-align: right;
+   margin-right: 20px;
+}
   .footercontact {
     color: #e5a191;
     margin-top: 0px;
@@ -17,7 +19,6 @@
     font-size: $h5;
   }
   .footermail{
-    margin-bottom: 88px;
     a {
       color: #FFFFFF;
       font-size: $h5;
@@ -26,41 +27,30 @@
       color: #e8a597;
     }
   }
-  .footerlogo {
-    margin-bottom: 88px;
-    margin-top: 0px; 
-    text-align: right;
-  }
   .footernavigation {
-    float: right;
-    margin: 0;
-    padding: 0;
     ul {
       list-style-type: none;
+      display: flex;
       font-size: $link;
     }
-    li{
-      float: left;
+    li {
+      padding: 20px;
     }
     a{
       color: #FFFFFF;
       text-decoration: none;
-      padding: 0px 12px;
     }
     a:hover {
       color: #e8a597;
     }
   }
-  
   .scrolltop {
     color: #FFFFFF;
     font-size: $link;
     border-bottom: 2px solid #e5a191;
     padding-bottom: 5px;
     text-decoration: none;
-    
   }
   .scrolltop:hover{
       color: #e8a597;
   }
-  

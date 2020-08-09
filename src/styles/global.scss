@@ -12,12 +12,12 @@ $h3: 1.25rem;
 $h4: 1rem;
 $h5: .875rem;
 $h6: .500rem;
-$p : .785rem;
-$link: .645rem;
+$p : .70rem;
+$link: .545rem;
 * {
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
+	box-sizing: border-box;
     //font-size: 16px;
   }
 html{
@@ -25,7 +25,7 @@ html{
   font-size: 16px;
 }
 $container-width: 100%;// wrapper ---
-//$site-width: 1680px; /// inside wrapper site width margin 0 auto; image width 1680px
+$site-width: 1920px; /// inside wrapper site width margin 0 auto; image width 1680px
 $color-pallet-background: #e5a191;
 $color-pallet-footer: #393451;
 $color-pallet-links: #ffffff;
@@ -41,10 +41,7 @@ h6{
 	//margin-top: $baseline;
 	
 }
-p {
-  font-weight: 200;
-  //margin-bottom: $baseline;
-}
+
 h1 {
 	font-size: $h1;
 	//line-height: $h1;
@@ -82,7 +79,7 @@ h6 {
 p{
   font-size: $p;
   font-weight: 200;
-	//line-height: $h3;
+  line-height: $h2;
 }
 // .link {
 // 	font-size: $link;

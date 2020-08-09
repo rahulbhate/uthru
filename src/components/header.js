@@ -5,18 +5,20 @@ import ReactHtmlParser, {
   convertNodeToElement,
   htmlparser2,
 } from "react-html-parser"
+import { GiHamburgerMenu } from "react-icons/gi";
 import { Link, useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import Sidebar from "./sidebar"
 import { FaArrowDown } from "react-icons/fa"
 import styles from "./header.module.scss"
 import logo from "../images/uthrulogo_purpleBG.png"
-
+import logoalt from "../images/uthrulogo_pinkBG.png"
+import photo from "../images/kitchen-female.png"
 const HeaderLink = props => {
   const activeStyle = {
     color: "#e5a191",
     fontWeight: "bold",
-    textDecoration: "underline",
+    borderBottom: "2px solid #e5a190"
   }
   return (
     <Link className={styles.link} to={props.to} activeStyle={activeStyle}>
@@ -35,7 +37,9 @@ const NavMenu = props => {
   )
 }
 export default function Header({ dataIndex, navbar }) {
-  const [isflag, setflag] = useState()
+  const [open,setOpen] = useState(true);
+  const [isflag, setflag] = useState();
+ 
   const listenScrollEvent = event => {
     if (window.scrollY < 100) {
       setflag(false)
@@ -45,85 +49,42 @@ export default function Header({ dataIndex, navbar }) {
       console.log(window.scrollY, isflag)
     }
   }
-
+  const listenClickEvent = event => {
+    setOpen(!open);
+    console.log(open);
+    }
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent)
     return () => window.removeEventListener("scroll", listenScrollEvent)
   }, [])
-  /**
-   * Oftentimes we'll have different UI state
-   * based on the router location.  Do it here.
-   */
-  // useEffect(() => console.log(location), [location]);
-  // console.log(dataIndex);
 
   return (
     <>
-      <div className={styles.banner}>
         {navbar ? (
           <div className={styles.overlayalternate}></div>
         ) : (
           <div className={styles.overlay}></div>
         )}
-        <header className={styles.container}>
-          <nav className={isflag ? styles.rowbg : styles.row}>
-            <div className={styles.logo}>
-              <a href="/">
-                <Img
-                  fluid={dataIndex.header[0].logo.fluid}
-                  imgStyle={{ width: "25%", height: "25%", zIndex: 30 }}
-                />
-              </a>
-            </div>
-            {navbar ? (
-              <div className={styles.header}>
-                <NavMenu />
-                {/* <Sidebar /> */}
-              </div>
-            ) : null}
-          </nav>
-
-          <div
-            className={
-              navbar
-                ? styles.headerSectionContentsAlternate
-                : styles.headerSectionContents
-            }
-          >
+        <header className={navbar ? styles.showcase : styles.showcaseAlternate}>
             {navbar ? (
               <>
-                <div style={{ width: "50%" }}>
-                  <>
-                    <img src={logo} alt="Logo" width="17%" />
-                  </>
-                </div>
-                <h1 className={styles.subtitlealt}>
-                  {ReactHtmlParser(dataIndex.header[0].titleText)}
-                </h1>
-              </>
-            ) : (
-              <h1 className={styles.subtitle}>
-                {ReactHtmlParser(dataIndex.header[0].titleText)}
-              </h1>
-            )}
-            <p className={styles.contents}>
-              {dataIndex.header[0].titleSubtext}
-            </p>
-            {navbar ? (
-              <>
-                <div style={{ width: "62%" }}>
+              <img src={logo} alt="U Thru" style={{width: '110px', zIndex:10}} />
+              <h1>{ReactHtmlParser(dataIndex.header[0].titleText)}</h1>
+              <p>{dataIndex.header[0].titleSubtext}</p>
                   <a className={styles.links} href="#chatForm">
                     <button className={styles.btnprimary}>
                       {ReactHtmlParser(dataIndex.header[0].buttonsLinks)}
                     </button>
                   </a>
-                </div>
-                <div style={{ width: "40%", marginTop: "20px" }}>
+                <div>
                   <FaArrowDown size={48} className={styles.bounce} />
                 </div>
               </>
             ) : (
               <>
+                <h1>{ReactHtmlParser(dataIndex.header[0].titleText)}</h1>
+                <p> {dataIndex.header[0].titleSubtext}</p>
+                <div>
                 <Link className={styles.links} to="/agents">
                   <button className={styles.btnprimary}>I 'm an agent</button>
                 </Link>
@@ -132,11 +93,21 @@ export default function Header({ dataIndex, navbar }) {
                     I 'm a buyer/renter
                   </button>
                 </Link>
+                </div>
               </>
             )}
-          </div>
+                {navbar ? (
+                  <nav className={isflag ?  styles.mainNavAlternateColor : styles.mainNav}>
+                  <img src={logo} alt="U Thru" style={{width: '100px',marginLeft: '15px'}} />
+                    <div className={styles.mainMenu}>
+                      <NavMenu />
+                      {/* <Sidebar /> */}
+                    </div>
+                  </nav>
+            ) : <nav className={styles.mainNavNocolor}>
+                  <img src={logoalt} alt="U Thru" style={{width: '100px',marginLeft: '15px'}} />
+                  </nav>}
         </header>
-      </div>
     </>
   )
 }

@@ -17,37 +17,37 @@ const About = ( {location} ) => {
   return (
     <Layout>
        <Header dataIndex={dataAbout.about} navbar={true}/>
-       <div className={styles.sectionFive}>
+       <div className={styles.sectionsContainer}>
+       
        <hr className={styles.special}/>
+       <div className={styles.section}>
         <h2>{dataAbout.about.midcontent[0].titleText1}</h2>
+        </div>
+        <div className={styles.section}>
        <p>{dataAbout.about.midcontent[0].titleSubtext1}</p></div>
+       </div>
+       
        <section className={styles.howWorks}>
        <hr className={styles.rounded}/>
        {ReactHtmlParser(dataAbout.about.midcontent[0].bulletedList)}
          </section>
-       <section className={styles.sectionColumns}>
+       <section className={styles.homeCards}>
       <div>
-        <span>
         <FaMobile color={"#fba394"} size={48} />
-        </span>
         <h2>{dataAbout.about.midcontent[0].titleText3}</h2>
         <p>
         {dataAbout.about.midcontent[0].titleSubtext3}
         </p>
       </div>
       <div>
-        <span>
         <FaClock size={48} color={"#fba394"} />
-        </span>
         <h2>{dataAbout.about.midcontent[0].titleText4}</h2>
         <p>
         {dataAbout.about.midcontent[0].titleSubtext4}
         </p>
       </div>
       <div>
-        <span>
         <FaHandPointer size={48} color={"#fba394"} />
-        </span>
         <h2>{dataAbout.about.midcontent[0].titleText5}</h2>
         <p>
         {dataAbout.about.midcontent[0].titleSubtext5}
@@ -55,13 +55,22 @@ const About = ( {location} ) => {
       </div>
       <div id="chatForm"></div>
     </section>
-       <div className={styles.sectionFive}>
+       <div className={styles.sectionsContainer}>
        <hr className={styles.special} />
+       <div className={styles.section}>
          <h2>{dataAbout.about.midcontent[0].titleText6}</h2>
+         </div>
+         <div className={styles.section}>
        <p>{dataAbout.about.midcontent[0].titleSubtext6}</p></div>
-       <div className={styles.detailsArea}>
-      <ChatForm />
-    </div>
+       </div>
+       <div className={styles.sectionsContainer}>
+        <div className={styles.detailsArea}>
+        <div className={styles.section}>
+          <ChatForm />
+      </div>
+      </div>
+      </div>
+    
      </Layout>
   )
   }
