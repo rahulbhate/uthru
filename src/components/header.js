@@ -39,7 +39,7 @@ const NavMenu = props => {
 export default function Header({ dataIndex, navbar }) {
   const [open,setOpen] = useState(true);
   const [isflag, setflag] = useState();
- 
+  const [width,setWidth] = useState();
   const listenScrollEvent = event => {
     if (window.scrollY < 100) {
       setflag(false)
@@ -47,6 +47,15 @@ export default function Header({ dataIndex, navbar }) {
     } else if (window.scrollY > 100) {
       setflag(true)
       console.log(window.scrollY, isflag)
+    }
+  }
+  const listenResizeEvent = event => { 
+    if(window.innerWidth > 960){
+      console.log(window.innerWidth);
+        return setWidth("desktop");
+    }
+    else {
+       return setWidth("mobile")
     }
   }
   const listenClickEvent = event => {
@@ -57,7 +66,10 @@ export default function Header({ dataIndex, navbar }) {
     window.addEventListener("scroll", listenScrollEvent)
     return () => window.removeEventListener("scroll", listenScrollEvent)
   }, [])
-
+  useEffect(() => {
+    window.addEventListener("resize", listenResizeEvent)
+    return () => window.removeEventListener("resize", listenResizeEvent)
+  }, [])
   return (
     <>
         {navbar ? (
@@ -100,8 +112,7 @@ export default function Header({ dataIndex, navbar }) {
                   <nav className={isflag ?  styles.mainNavAlternateColor : styles.mainNav}>
                   <img src={logo} alt="U Thru" style={{width: '100px',marginLeft: '15px'}} />
                     <div className={styles.mainMenu}>
-                      <NavMenu />
-                      {/* <Sidebar /> */}
+                      { width === 'desktop' ?   <NavMenu /> : <Sidebar /> }
                     </div>
                   </nav>
             ) : <nav className={styles.mainNavNocolor}>

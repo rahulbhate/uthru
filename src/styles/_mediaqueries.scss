@@ -1,6 +1,6 @@
 @media(max-width: 700px) {
  .mainMenu {
-              //display: flex;
+              display: none !important;
             //  flex-direction: column;
             //  position: absolute;
             //  top:0;
@@ -11,6 +11,15 @@
             //  transform : translateX(-20px);
         // margin:0px !important;
         // padding: 0px !important;
+    }
+    header {
+      height: 100vh !important;
+    }
+    .overlay {
+      height: 100vh !important;
+    }
+    .overlayalternate {
+      height: 100vh !important;
     }
    
     .mainNav .mainMenu .link, .mainNavAlternateColor .mainMenu .link {
@@ -61,7 +70,26 @@
         margin-right: 0px;
         text-align: center;
       }
+      
 }
+// @media only screen and (max-device-width: 500px) and (orientation: landscape) {
+//   html {
+//     transform: rotate(-90deg);
+//     transform-origin: left top;
+//     width: 100vh;
+//     overflow-x: hidden;
+//     position: absolute;
+//     top: 100%;
+//     left: 0;
+//   }
+// }
+/* Smartphones (landscape) ----------- */
+// @media only screen and (min-width : 321px) and (orientation : landscape) { 
+//   /* Styles */rywerg3ggerb3ghe
+//   html {
+//     transform: rotate(0deg);
+//   }jfektjfefergkr
+//   }
 @media screen and (max-width: 734px) and (min-width: 0px) {
    
 

@@ -12,10 +12,8 @@ const Privacy = ({ data: { privacy } }) => (
   <>
   <Layout>
     <section className={styles.howWorks}>
-      <div id="about">
-        <hr className={styles.rounded} />
+        <hr className={styles.special} />
         <h2>Privacy Policy</h2>
-      </div>
       <h2>1. We respect your privacy </h2>
       <p>
       1.1. U Thru Pty Ltd respects your right to privacy and is committed to 
@@ -87,7 +85,7 @@ other websites you visit.
 statements of each and every website that collects personal identifiable information.
 </p>
     </section>
-    <section className={styles.sectionColumns}>
+    <section className={styles.homeCards}>
       <div>
         <span>
           <FaMobile size={48} color={"#fba394"} />
