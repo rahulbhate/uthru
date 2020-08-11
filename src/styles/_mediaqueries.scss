@@ -21,6 +21,10 @@
   .showcaseAlternate > h1, .showcaseAlternate > p {
       width: 100% !important;
   }
+  .showcase > img {
+    margin-left: 0px !important;
+  }
+ 
   .bounce {
     display: block !important;
     margin-left: 0px !important;
@@ -55,6 +59,9 @@
 @media screen and (max-width: 812px)  {
   .showcase {
     align-items: center;
+  }
+  .showcase > img {
+    margin-left: 0px !important;
   }
   .showcase > h1, .showcase > p {
     max-width: 100% !important;
