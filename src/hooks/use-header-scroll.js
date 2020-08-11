@@ -20,7 +20,7 @@ const getScroll = () => {
       // prevent execution of previous setTimeout
       clearTimeout(timeoutId);
       // change width from the state object after 150 milliseconds
-      timeoutId = setTimeout(() => setScroll(getScroll()), 50);
+      timeoutId = setTimeout(() => setScroll(getScroll()), 30);
     };
     // set resize listener
     window.addEventListener('scroll',scrollListener);
