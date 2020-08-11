@@ -1,9 +1,8 @@
 import { useState, useEffect } from 'react';
-
 const getScroll = () => {
-    if (window.scrollY < 100) {
+    if (window.scrollY < 100 || document.documentElement.scrollY < 100 || document.body.scrollY < 100) {
         return false
-      } else if (window.scrollY > 100) {
+      } else if (window.scrollY > 100 || document.documentElement.scrollY > 100 || document.body.scrollY > 100) {
         return true
       }
 }

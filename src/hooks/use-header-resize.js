@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 
 const getWidth = () => {
-    if(window.innerWidth > 960){
+  
+    if(window.innerWidth > 960 || document.documentElement.clientWidth > 960  || document.body.clientWidth > 960){
           return true;
       }
       else {
