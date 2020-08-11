@@ -19,9 +19,9 @@ export default function Footer() {
         </a>
       </section>
       <section>
-        <h2>
-          <img src={logo} alt="Logo" width="110px" />
-        </h2>
+          <h2>
+            <img src={logo} alt="Logo" width="110px" />
+          </h2>
         <section className={styles.footernavigation}>
           {ReactHtmlParser(
             dataIndex.footer.footerContent[0].footerLinksCopyright

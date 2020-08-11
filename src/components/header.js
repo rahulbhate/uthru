@@ -43,7 +43,7 @@ export default function Header({ dataIndex, navbar }) {
         <header className={navbar ? styles.showcase : styles.showcaseAlternate}>
             {navbar ? (
               <>
-              <img src={logo} alt="U Thru" style={{width: '110px', zIndex:10}} />
+              <h2><img src={logo} alt="U Thru" style={{width: '110px', zIndex:10}} /></h2>
               <h1>{ReactHtmlParser(dataIndex.header[0].titleText)}</h1>
               <p>{dataIndex.header[0].titleSubtext}</p>
                   <a className={styles.links} href="#chatForm">
@@ -73,7 +73,7 @@ export default function Header({ dataIndex, navbar }) {
             )}
                 {navbar ? (
                   <nav className={isflag ?  styles.mainNavAlternateColor : styles.mainNav}>
-                  <img src={logo} alt="U Thru" style={{width: '100px',marginLeft: '15px'}} />
+                  <h2><img src={logo} alt="U Thru" style={{width: '100px',marginLeft: '15px'}} /></h2>
                     <div className={styles.mainMenu}>
                       { width ? <NavMenu /> : <Sidebar />}
                     </div>

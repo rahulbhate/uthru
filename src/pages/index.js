@@ -3,7 +3,6 @@ import { graphql } from "gatsby"
 import { useSiteIndexdata} from '../hooks/use-site-indexdata'
 import Header from "../components/header"
 import styles from "./index.module.scss"
-import { Helmet } from "react-helmet"
 import Layout from "../components/layout"
 
 const Index = ({location}) => {
@@ -12,12 +11,6 @@ const Index = ({location}) => {
   console.log({location});
   return(
     <>
-    <Helmet>
-          <meta charSet="utf-8" />
-          <meta http-equiv="ScreenOrientation" content="autoRotate:disabled"></meta>
-          <title>U Thru</title>
-          <link rel="canonical" href="http://mysite.com/example" />
-        </Helmet>
     <Layout><Header dataIndex={dataIndex.home} location={location} navbar={false}/>
     </Layout>
    

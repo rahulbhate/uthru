@@ -12,7 +12,7 @@ const Sidebar = () =>{
     return( 
       <>
         <div className="menu-btn"><span className={open ? "menu-btn__burger" : "menu-btn__burger open"} onClick={listenClickEvent}> </span><div className={open ? "menu-nav__open": "menu-nav"}><NavMenu /></div></div>
-        {/* <GiHamburgerMenu size={48} /> */}
+        {/* <div className={open ? "menu-btn__burger" : "menu-btn__burger open"}> <GiHamburgerMenu size={48} onClick={listenClickEvent}/> <div className={open ? "menu-nav__open": "menu-nav"}><NavMenu /></div></div> */}
       </>
          
     )

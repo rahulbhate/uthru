@@ -9,9 +9,7 @@
   align-items: left;
   text-align: left;
   justify-content: center;
-  align-self: center;
   line-height: 2.5rem;
-  
 }
 .showcaseAlternate {
   width: 100%;
@@ -36,6 +34,10 @@
   max-width: 400px;
   font-size: $h5;
   margin-left: calc(7% + 110px);
+}
+.showcase img {
+  text-align: center;
+  z-index: 989;
 }
 
 .showcase .btnprimary , .bounce {
