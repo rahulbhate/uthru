@@ -1,19 +1,13 @@
 import React, { useState, useEffect } from "react"
-
-import ReactHtmlParser, {
-  processNodes,
-  convertNodeToElement,
-  htmlparser2,
-} from "react-html-parser"
-import { GiHamburgerMenu } from "react-icons/gi";
-import { Link, useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { useCurrentWidth } from "../hooks/use-header-resize"
+import {  useScrollHeight } from "../hooks/use-header-scroll"
+import ReactHtmlParser from "react-html-parser"
+import { Link } from "gatsby"
 import Sidebar from "./sidebar"
 import { FaArrowDown } from "react-icons/fa"
 import styles from "./header.module.scss"
 import logo from "../images/uthrulogo_purpleBG.png"
 import logoalt from "../images/uthrulogo_pinkBG.png"
-import photo from "../images/kitchen-female.png"
 const HeaderLink = props => {
   const activeStyle = {
     color: "#e5a191",
@@ -37,39 +31,8 @@ const NavMenu = props => {
   )
 }
 export default function Header({ dataIndex, navbar }) {
-  const [open,setOpen] = useState(true);
-  const [isflag, setflag] = useState();
-  const [width,setWidth] = useState();
-  const listenScrollEvent = event => {
-    if (window.scrollY < 100) {
-      setflag(false)
-      console.log(window.scrollY, isflag)
-    } else if (window.scrollY > 100) {
-      setflag(true)
-      console.log(window.scrollY, isflag)
-    }
-  }
-  const listenResizeEvent = event => { 
-    if(window.innerWidth > 960){
-      console.log(window.innerWidth);
-        return setWidth("desktop");
-    }
-    else {
-       return setWidth("mobile")
-    }
-  }
-  const listenClickEvent = event => {
-    setOpen(!open);
-    console.log(open);
-    }
-  useEffect(() => {
-    window.addEventListener("scroll", listenScrollEvent)
-    return () => window.removeEventListener("scroll", listenScrollEvent)
-  }, [])
-  useEffect(() => {
-    window.addEventListener("resize", listenResizeEvent)
-    return () => window.removeEventListener("resize", listenResizeEvent)
-  }, [])
+  const width = useCurrentWidth();
+  const isflag = useScrollHeight();
   return (
     <>
         {navbar ? (
@@ -112,7 +75,7 @@ export default function Header({ dataIndex, navbar }) {
                   <nav className={isflag ?  styles.mainNavAlternateColor : styles.mainNav}>
                   <img src={logo} alt="U Thru" style={{width: '100px',marginLeft: '15px'}} />
                     <div className={styles.mainMenu}>
-                      { width === 'desktop' ?   <NavMenu /> : <Sidebar /> }
+                      { width ? <NavMenu /> : <Sidebar />}
                     </div>
                   </nav>
             ) : <nav className={styles.mainNavNocolor}>

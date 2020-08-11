@@ -9,5 +9,6 @@ const addScript = url => {
   export const onClientEntry = () => {
     window.onload = () => {
       addScript("https://js.createsend1.com/javascript/copypastesubscribeformlogic.js")
+      addScript("http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
     }
   }
