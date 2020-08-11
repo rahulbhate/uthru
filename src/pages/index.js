@@ -15,7 +15,7 @@ const Index = ({location}) => {
     <Helmet>
           <meta charSet="utf-8" />
           <meta http-equiv="ScreenOrientation" content="autoRotate:disabled"></meta>
-          <title>My Title</title>
+          <title>U Thru</title>
           <link rel="canonical" href="http://mysite.com/example" />
         </Helmet>
     <Layout><Header dataIndex={dataIndex.home} location={location} navbar={false}/>

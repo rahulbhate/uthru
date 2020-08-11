@@ -1,49 +1,49 @@
 @media(max-width: 700px) {
-    header {
-      height: 100vh !important;
+  header {
+    height: 100vh !important;
+  }
+  .overlay {
+    height: 100vh !important;
+  }
+  .overlayalternate {
+    height: 100vh !important;
+  }
+ 
+  .mainNavNocolor img{
+       display: block;
+      margin: auto !important;
+  }
+  .showcase > h1, .showcase > p{
+      width: 100% !important;
+      text-align: center !important;
+      margin: 0px !important;
+  }
+  .showcaseAlternate > h1, .showcaseAlternate > p {
+      width: 100% !important;
+  }
+  .howWorks {
+      margin: 0px !important;
     }
-    .overlay {
-      height: 100vh !important;
+  .homeCards {
+      grid-template-columns: 1fr !important;
+      margin: 0px !important;
+  }
+  .section {
+      text-align: center;
     }
-    .overlayalternate {
-      height: 100vh !important;
+    .special {
+      margin: auto;
     }
-   
-    .mainNavNocolor img{
-         display: block;
-        margin: auto !important;
+  .footer {
+      text-align: center;
+      justify-content: center;
     }
-    .showcase > h1, .showcase > p{
-        width: 100% !important;
-        text-align: center !important;
-        margin: 0px !important;
+    .footer ul {
+      text-align: center;
+      flex-direction: column;
     }
-    .showcaseAlternate > h1, .showcaseAlternate > p {
-        width: 100% !important;
+    .footer section h2 {
+      margin-right: 0px;
+      text-align: center;
     }
-    .howWorks {
-        margin: 0px !important;
-      }
-    .homeCards {
-        grid-template-columns: 1fr !important;
-        margin: 0px !important;
-    }
-    .section {
-        text-align: center;
-      }
-      .special {
-        margin: auto;
-      }
-    .footer {
-        text-align: center;
-        justify-content: center;
-      }
-      .footer ul {
-        text-align: center;
-        flex-direction: column;
-      }
-      .footer section h2 {
-        margin-right: 0px;
-        text-align: center;
-      }
 }

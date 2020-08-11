@@ -22,31 +22,25 @@
   align-items: center;
   text-align: center;
   justify-content: center;
-  line-height: 2.5rem;
 }
 .showcaseAlternate > h1, .showcaseAlternate > p , .showcaseAlternate > img{
   color: white;
   z-index: 10;
-  width: 40%;
+  max-width: 400px;
   font-size: $h5;
-  padding: 10px 0 0 10px;
+  // padding: 10px 0 0 10px;
 }
 .showcase > h1, .showcase > p , .showcase > img{
   color: white;
   z-index: 10;
-  width: 40%;
+  max-width: 400px;
   font-size: $h5;
-    // padding: 10px 0 0 10px;
- 
-    margin-left: calc(7% + 110px);
-    // margin-bottom: calc(5% + 10px);
-  //margin-left: 110px;
+  margin-left: calc(7% + 110px);
 }
 
 .showcase .btnprimary , .bounce {
   margin-top: calc(2% + 40px);
-  margin-left: calc(15% + 10px);
-  // margin-left: 110px;
+  margin-left: calc(13% + 10px);
   z-index: 10;
 }
 
