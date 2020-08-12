@@ -8,6 +8,7 @@ import { FaArrowDown } from "react-icons/fa"
 import styles from "./header.module.scss"
 import logo from "../images/uthrulogo_purpleBG.png"
 import logoalt from "../images/uthrulogo_pinkBG.png"
+import ScrollToTop from './scrolltotop'
 const HeaderLink = props => {
   const activeStyle = {
     color: "#e5a191",
@@ -41,6 +42,7 @@ export default function Header({ dataIndex, navbar }) {
           <div className={styles.overlay}></div>
         )}
         <header className={navbar ? styles.showcase : styles.showcaseAlternate}>
+        { isflag ?  <ScrollToTop /> : null }
             {navbar ? (
               <>
               <img src={logo} alt="U Thru" style={{width: '110px', zIndex:10}} />
@@ -73,14 +75,14 @@ export default function Header({ dataIndex, navbar }) {
             )}
                 {navbar ? (
                   <nav className={isflag ?  styles.mainNavAlternateColor : styles.mainNav}>
-                  <h2><img src={logo} alt="U Thru" style={{width: '100px',marginLeft: '15px'}} /></h2>
+                  <h2><a href="/"><img src={logo} alt="U Thru" style={{width: '100px',marginLeft: '15px'}} /></a></h2>
                     <div className={styles.mainMenu}>
                       { width ? <NavMenu /> : <Sidebar />}
                     </div>
                   </nav>
             ) : <nav className={styles.mainNavNocolor}>
-                  <img src={logoalt} alt="U Thru" style={{width: '100px',marginLeft: '15px'}} />
-                  </nav>}
+                   <img src={logoalt} alt="U Thru" style={{width: '100px',marginLeft: '15px'}} />
+                </nav>}
         </header>
     </>
   )

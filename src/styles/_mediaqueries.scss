@@ -8,7 +8,9 @@
   .overlayalternate {
     height: 100vh !important;
   }
- 
+  p.scrollTop {
+  max-width: 40px !important;
+ }
   .mainNavNocolor img{
       display: block;
       margin: auto !important;
@@ -69,6 +71,9 @@
     line-height: 1rem;
     text-align: center;
   }
+  p.scrollTop{
+     max-width: 40px !important;
+   }
   .btnprimary {
     margin: 15px !important;
   }
@@ -97,6 +102,11 @@
     text-align: center;
   }
   
+}
+@media screen and (min-width: 280px) and (max-width: 699px){
+  p.scrollTop{
+  max-width: 40px !important;
+ }
 }
 
 // @media screen and (min-width: 280px) and (max-width: 812px) and (orientation: landscape) {

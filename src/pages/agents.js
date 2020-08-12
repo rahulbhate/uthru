@@ -16,12 +16,6 @@ const Chat = ( {location} ) => {
   console.log({location},dataChat);
   return(
     <Layout>
-    <Helmet>
-          <meta charSet="utf-8" />
-          <meta http-equiv="ScreenOrientation" content="autoRotate:disabled"></meta>
-          <title>My Title</title>
-          <link rel="canonical" href="http://mysite.com/example" />
-        </Helmet>
       <Header dataIndex={dataChat.chat} navbar={true}/>
       <div className={styles.sectionsContainer}>
       <hr className={styles.special} />
