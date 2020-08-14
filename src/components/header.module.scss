@@ -9,7 +9,6 @@
   align-items: left;
   text-align: left;
   justify-content: center;
-  line-height: 2rem;
 }
 .showcaseAlternate {
   width: 100%;
@@ -25,22 +24,16 @@
   color: white;
   z-index: 10;
   max-width: 400px;
-  font-size: $h5;
-  // padding: 10px 0 0 10px;
 }
-.showcase > h1 {
+.showcase h1 span{
   color: #e5a190;
-  font-size: $h3;
 }
-.showcaseAlternate > h1 {
+.showcaseAlternate h1 span{
   color: #393451;
-  font-size: $h3;
 }
 .showcase > h1, .showcase > p , .showcase > img{
-  // color: white;
   z-index: 10;
   max-width: 400px;
-  // font-size: $h5;
   margin-left: calc(7% + 110px);
 }
 .showcase img {
@@ -77,7 +70,6 @@ p.scrollTop {
     position: fixed;
     top: 0;
     width: 100%;
-    font-size: 16px;
     background-color:rgba(0,0,0,0.1);
     z-index: 200;
   }
@@ -89,7 +81,6 @@ p.scrollTop {
     position: fixed;
     top: 0;
     width: 100%;
-    font-size: 16px;
     background-color: #393451;
     z-index: 200;
 
@@ -102,7 +93,6 @@ p.scrollTop {
     position: fixed;
     top: 0;
     width: 100%;
-    font-size: 16px;
     z-index: 200;
   }
   

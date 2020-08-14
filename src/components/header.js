@@ -46,8 +46,8 @@ export default function Header({ dataIndex, navbar }) {
             {navbar ? (
               <>
               <img src={logo} alt="U Thru" style={{width: '110px', zIndex:10}} />
-              <h1>{ReactHtmlParser(dataIndex.header[0].titleText)}</h1>
-              <p>{dataIndex.header[0].titleSubtext}</p>
+              {ReactHtmlParser(dataIndex.header[0].titleText)}
+              <p>{ReactHtmlParser(dataIndex.header[0].titleSubtext)}</p>
                   <a className={styles.links} href="#chatForm">
                     <button className={styles.btnprimary}>
                       {ReactHtmlParser(dataIndex.header[0].buttonsLinks)}
@@ -59,7 +59,7 @@ export default function Header({ dataIndex, navbar }) {
               </>
             ) : (
               <>
-                <h1>{ReactHtmlParser(dataIndex.header[0].titleText)}</h1>
+                {ReactHtmlParser(dataIndex.header[0].titleText)}
                 <p> {dataIndex.header[0].titleSubtext}</p>
                 <div>
                 <Link className={styles.links} to="/agents">

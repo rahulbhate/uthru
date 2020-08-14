@@ -17,12 +17,10 @@ footer section h2{
     color: #e5a191;
     margin-top: 0px;
     margin-bottom: 15px;
-    font-size: $h5;
   }
   .footermail{
     a {
       color: #FFFFFF;
-      font-size: $h5;
     }
     a:hover{
       color: #e8a597;
@@ -32,7 +30,6 @@ footer section h2{
     ul {
       list-style-type: none;
       display: flex;
-      font-size: $link;
     }
     li {
       padding: 20px;
@@ -40,6 +37,7 @@ footer section h2{
     a{
       color: #FFFFFF;
       text-decoration: none;
+      font-size: 16px;
     }
     a:hover {
       color: #e8a597;
@@ -47,7 +45,6 @@ footer section h2{
   }
   .scrolltop {
     color: #FFFFFF;
-    font-size: $link;
     border-bottom: 2px solid #e5a191;
     padding-bottom: 5px;
     text-decoration: none;

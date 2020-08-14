@@ -7,8 +7,9 @@ body {
     /* Muli */
     font-family: 'Muli';
     background-color:#e5a190;
-    /* font-weight:900; */
+    font-weight:200;
     font-size: 16px;
+   
      /* font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));  */
     color: white;

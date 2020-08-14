@@ -34,21 +34,21 @@ const About = ( {location} ) => {
        <section className={styles.homeCards}>
       <div>
         <FaMobile color={"#fba394"} size={48} />
-        <h2>{dataAbout.about.midcontent[0].titleText3}</h2>
+        <h3>{dataAbout.about.midcontent[0].titleText3}</h3>
         <p>
         {dataAbout.about.midcontent[0].titleSubtext3}
         </p>
       </div>
       <div>
         <FaClock size={48} color={"#fba394"} />
-        <h2>{dataAbout.about.midcontent[0].titleText4}</h2>
+        <h3>{dataAbout.about.midcontent[0].titleText4}</h3>
         <p>
         {dataAbout.about.midcontent[0].titleSubtext4}
         </p>
       </div>
       <div>
         <FaHandPointer size={48} color={"#fba394"} />
-        <h2>{dataAbout.about.midcontent[0].titleText5}</h2>
+        <h3>{dataAbout.about.midcontent[0].titleText5}</h3>
         <p>
         {dataAbout.about.midcontent[0].titleSubtext5}
         </p>

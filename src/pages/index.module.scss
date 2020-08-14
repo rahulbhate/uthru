@@ -54,7 +54,6 @@ input{
   }
   .section p {
     color: white;
-    font-size: $p;
   }
   .special {
     border-top: 8px solid #393451;
@@ -78,11 +77,9 @@ input{
   .homeCards h2 {
      // margin-bottom: 5px;
     color: white;
-    font-size: $h3;
   }
   .homeCards p {
       color: white;
-      font-size: $p;
   }
   .howWorks {
     display: flex;
@@ -93,7 +90,6 @@ input{
     margin-right: 50px;
     text-align: center;
     color: #e5a190;
-    font-size: $h3;
     background-color: white;
     flex-direction: column;
     ul li {
@@ -103,12 +99,10 @@ input{
 .bulletHeadings{
     color: $color-pallet-background;
     margin-bottom: 15px;
-    font-size: $h5;
     font-weight: bold;
 }
 .bulletContents{
     color: #999999;
-    font-size: $h5;
     font-weight: 500;
     margin-bottom: 55px;
 }
