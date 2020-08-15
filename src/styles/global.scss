@@ -14,15 +14,8 @@ $h5: .675rem;
 $h6: .500rem;
 $p : .70rem;
 $link: .445rem;
-* {
-    padding: 0px;
-    margin: 0px;
-	box-sizing: border-box;
-    //font-size: 16px;
-  }
 html{
   @include fluid-type(font-size, $minScreen, $maxScreen, $minFont, $maxFont);
-  font-size: 16px;
 }
 $container-width: 100%;// wrapper ---
 $site-width: 1920px; /// inside wrapper site width margin 0 auto; image width 1680px

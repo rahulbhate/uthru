@@ -28,7 +28,7 @@ const About = ( {location} ) => {
        </div>
        
        <section className={styles.howWorks}>
-       <hr className={styles.rounded}/>
+       <hr className={styles.special}/>
        {ReactHtmlParser(dataAbout.about.midcontent[0].bulletedList)}
          </section>
        <section className={styles.homeCards}>
